@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.gov.sk/form/42156424.RozhodnutieOpakovaneListinneDorucenie.sk/1.0" xmlns="http://schemas.gov.sk/form/42156424.RozhodnutieOpakovaneListinneDorucenie.sk/1.0">
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.2"
+  xmlns="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.2">
   <xs:element name="Adjudgement">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Sender" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="CorporateBodyData" type="CorporateBodyDataTypeWithoutCountry" minOccurs="0" >
+              <xs:element name="CorporateBodyData" type="CorporateBodyDataTypeWithoutCountry"
+                minOccurs="0">
                 <xs:annotation>
                   <xs:documentation xml:lang="sk">Odosielatel</xs:documentation>
                 </xs:annotation>
@@ -14,33 +18,25 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Recipient" minOccurs="0" maxOccurs="unbounded" >
+        <xs:element name="Recipient" minOccurs="0" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="SubjectType" type="typeOfString100" minOccurs="0" >
+              <xs:element name="SubjectType" type="typeOfString100" minOccurs="0">
                 <xs:annotation>
                   <xs:documentation xml:lang="sk">Adresat</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="PhysicalPersonData" type="PhysicalPersonBodyDataType" minOccurs="0" >
+              <xs:element name="PhysicalPersonData" type="PhysicalPersonBodyDataType" minOccurs="0">
                 <xs:annotation>
                   <xs:documentation xml:lang="sk">Oznacenie fyzickej osoby.</xs:documentation>
-                  <xs:appinfo>
-                    {
-                    "@context": {
-                    "dct": "http://purl.org/dc/terms/",
-                    "lsub": "https://data.gov.sk/def/ontology/legal-subject/",
-                    "pper": "https://data.gov.sk/def/ontology/physical-person/",
-                    "foaf": "http://xmlns.com/foaf/0.1/",
-                    "owl": "http://www.w3.org/2002/07/owl#",
-                    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-                    "skos": "http://www.w3.org/2004/02/skos/core#"
-                    },
-                    "@id": "https://data.gov.sk/id/egov/eform/RozhodnutieOpakovaneListinneDorucenie.sk/1.7/Adjudgement/Recipient/PhysicalPersonData/PersonData/PhysicalPerson"
-                    "@type": "pper:PhysicalPerson",
-                    "dct:references": "pper:PhysicalPerson"
-                    }
-                  </xs:appinfo>
+                  <xs:appinfo> { "@context": { "dct": "http://purl.org/dc/terms/", "lsub":
+                    "https://data.gov.sk/def/ontology/legal-subject/", "pper":
+                    "https://data.gov.sk/def/ontology/physical-person/", "foaf":
+                    "http://xmlns.com/foaf/0.1/", "owl": "http://www.w3.org/2002/07/owl#", "rdfs":
+                    "http://www.w3.org/2000/01/rdf-schema#", "skos":
+                    "http://www.w3.org/2004/02/skos/core#" }, "@id":
+                    "https://data.gov.sk/id/egov/eform/OpakovaneListinneDorucenie.sk/1.7/Adjudgement/Recipient/PhysicalPersonData/PersonData/PhysicalPerson"
+                    "@type": "pper:PhysicalPerson", "dct:references": "pper:PhysicalPerson" } </xs:appinfo>
                 </xs:annotation>
               </xs:element>
               <xs:element name="CorporateBodyData" type="CorporateBodyDataType" minOccurs="0" />
@@ -59,7 +55,8 @@
                           <xs:element name="PersonData" minOccurs="0">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="PhysicalPerson" type="PhysicalPersonFormatedType" minOccurs="0" />
+                                <xs:element name="PhysicalPerson" type="PhysicalPersonFormatedType"
+                                  minOccurs="0" />
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>
@@ -75,17 +72,18 @@
         <xs:element name="Handled" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FileReference" type="typeOfString127" minOccurs="0" >
+              <xs:element name="FileReference" type="typeOfString127" minOccurs="0">
                 <xs:annotation>
-                  <xs:documentation xml:lang="sk">*Cislo spisu - Identifikacne cislo spisu, konania alebo inu registraturnu znacku.</xs:documentation>
+                  <xs:documentation xml:lang="sk">*Cislo spisu - Identifikacne cislo spisu, konania
+                    alebo inu registraturnu znacku.</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="MunicipalityPlace" type="typeOfString127" minOccurs="0" >
+              <xs:element name="MunicipalityPlace" type="typeOfString127" minOccurs="0">
                 <xs:annotation>
                   <xs:documentation xml:lang="sk">*Miesto - Nazov obce/mesta vydania rozhodnutia.</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="Date" type="typeOfDate" minOccurs="0" >
+              <xs:element name="Date" type="typeOfDate" minOccurs="0">
                 <xs:annotation>
                   <xs:documentation xml:lang="sk">*Datum - Den, mesiac a rok vydania rozhodnutia.</xs:documentation>
                 </xs:annotation>
@@ -96,34 +94,46 @@
         <xs:element name="AdjudgementData" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Subject" type="typeOfString1023" minOccurs="0" >
+              <xs:element name="Subject" type="typeOfString1023" minOccurs="0">
                 <xs:annotation>
-                  <xs:documentation xml:lang="sk">*Znenie - Uplne a presne znenie velkymi pismenami, napriklad ROZHODNUTIE alebo ROZKAZ.</xs:documentation>
+                  <xs:documentation xml:lang="sk">*Znenie - Uplne a presne znenie velkymi pismenami,
+                    napriklad ROZHODNUTIE alebo ROZKAZ.</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="Judgment" type="typeOfString" minOccurs="0" >
+              <xs:element name="Judgment" type="typeOfString" minOccurs="0">
                 <xs:annotation>
-                  <xs:documentation xml:lang="sk">Rozhodnutie - Uplny a presny nazov rozhodnutia v zmysle osobitnych pravnych predpisov, na zaklade ktorych prislusny organ pri vydani rozhodnutia postupoval.</xs:documentation>
+                  <xs:documentation xml:lang="sk">Rozhodnutie - Uplny a presny nazov rozhodnutia
+                    v zmysle osobitnych pravnych predpisov, na zaklade ktorych prislusny organ pri
+                    vydani rozhodnutia postupoval.</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="ProceedingsParticipants" type="typeOfString" minOccurs="0" >
+              <xs:element name="ProceedingsParticipants" type="typeOfString" minOccurs="0">
                 <xs:annotation>
-                  <xs:documentation xml:lang="sk">*Popis konania / Ucastnici konania - Identifikacne udaje vsetkych ucastnikov konania (napr. meno, priezvisko, datum narodenia, rodne cislo, adresu trvaleho pobytu a pod.) popis samotneho konania tak, aby bolo zrejme, v akej veci sa vydava.</xs:documentation>
+                  <xs:documentation xml:lang="sk">*Popis konania / Ucastnici konania - Identifikacne
+                    udaje vsetkych ucastnikov konania (napr. meno, priezvisko, datum narodenia,
+                    rodne cislo, adresu trvaleho pobytu a pod.) popis samotneho konania tak, aby
+                    bolo zrejme, v akej veci sa vydava.</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="Verdict" type="typeOfString" minOccurs="0" >
+              <xs:element name="Verdict" type="typeOfString" minOccurs="0">
                 <xs:annotation>
-                  <xs:documentation xml:lang="sk">Vyrok - Text vyroku rozhodnutia vo veci samej, z ktoreho budu zrejme priznane opravnenia, povinnosti, aplikovane pravne ustanovenia, lehota na plnenie a pod.</xs:documentation>
+                  <xs:documentation xml:lang="sk">Vyrok - Text vyroku rozhodnutia vo veci samej, z
+                    ktoreho budu zrejme priznane opravnenia, povinnosti, aplikovane pravne
+                    ustanovenia, lehota na plnenie a pod.</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="Justification" type="typeOfString" minOccurs="0" >
+              <xs:element name="Justification" type="typeOfString" minOccurs="0">
                 <xs:annotation>
-                  <xs:documentation xml:lang="sk">Odovodnenie - Text odovodnenia vyroku rozhodnutia, ktory zhodnoti skutkovy stav, vyjadrenia ucastnikov konania, zhrnie dokazovanie, zdovodni posudenie pravneho stavu veci a pod.).</xs:documentation>
+                  <xs:documentation xml:lang="sk">Odovodnenie - Text odovodnenia vyroku rozhodnutia,
+                    ktory zhodnoti skutkovy stav, vyjadrenia ucastnikov konania, zhrnie dokazovanie,
+                    zdovodni posudenie pravneho stavu veci a pod.).</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="Edification" type="typeOfString" minOccurs="0" >
+              <xs:element name="Edification" type="typeOfString" minOccurs="0">
                 <xs:annotation>
-                  <xs:documentation xml:lang="sk">Poucenie - Text poucenia rozhodnutia, ktory bude obsahovat informaciu o pripustnosti alebo nepripustnosti podat opravny prostriedok, v akej lehote, akemu organu a pod..</xs:documentation>
+                  <xs:documentation xml:lang="sk">Poucenie - Text poucenia rozhodnutia, ktory bude
+                    obsahovat informaciu o pripustnosti alebo nepripustnosti podat opravny
+                    prostriedok, v akej lehote, akemu organu a pod..</xs:documentation>
                 </xs:annotation>
               </xs:element>
             </xs:sequence>
@@ -132,14 +142,16 @@
         <xs:element name="Attachment" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="AttachmentVal" type="typeOfString4096" minOccurs="0" >
+              <xs:element name="AttachmentVal" type="typeOfString4096" minOccurs="0">
                 <xs:annotation>
-                  <xs:documentation xml:lang="sk">Priloha - Nepovinny ciselny udaj predstavujuci pocet prilozenych dokumentov, priklad: 2 prilohy.</xs:documentation>
+                  <xs:documentation xml:lang="sk">Priloha - Nepovinny ciselny udaj predstavujuci
+                    pocet prilozenych dokumentov, priklad: 2 prilohy.</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="AttachmentInfo" type="typeOfString" minOccurs="0" >
+              <xs:element name="AttachmentInfo" type="typeOfString" minOccurs="0">
                 <xs:annotation>
-                  <xs:documentation xml:lang="sk">Popis prilohy - Uplne a presne nazvy prilozenych dokumentov, priklad: Diplom, Zivotopis.</xs:documentation>
+                  <xs:documentation xml:lang="sk">Popis prilohy - Uplne a presne nazvy prilozenych
+                    dokumentov, priklad: Diplom, Zivotopis.</xs:documentation>
                 </xs:annotation>
               </xs:element>
             </xs:sequence>
@@ -148,9 +160,11 @@
         <xs:element name="ForInformation" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ForInformationRecipient" type="typeOfString" minOccurs="0" >
+              <xs:element name="ForInformationRecipient" type="typeOfString" minOccurs="0">
                 <xs:annotation>
-                  <xs:documentation xml:lang="sk">Adresati - Ak chcete adresata informovat o doruceni rozhodnutia dalsim osobam na vedomie, mozete zadat ich uplne a presne mena a priezviska/nazvy a adresy.</xs:documentation>
+                  <xs:documentation xml:lang="sk">Adresati - Ak chcete adresata informovat o
+                    doruceni rozhodnutia dalsim osobam na vedomie, mozete zadat ich uplne a presne
+                    mena a priezviska/nazvy a adresy.</xs:documentation>
                 </xs:annotation>
               </xs:element>
             </xs:sequence>
@@ -234,14 +248,19 @@
             <xs:element name="CorporateBody" minOccurs="0">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="CorporateBodyFullName" type="CorporateBodyFullNameTypeOpt" minOccurs="0" >
+                  <xs:element name="CorporateBodyFullName" type="CorporateBodyFullNameTypeOpt"
+                    minOccurs="0">
                     <xs:annotation>
-                      <xs:documentation xml:lang="sk">*Nazov - Uplny a presny nazov pravnickej osoby tak, ako je uvedeny v Obchodnom registri SR, pripadne v inej evidencii, ak sa pravnicka osoba nezapisuje do Obchodneho registra SR.</xs:documentation>
+                      <xs:documentation xml:lang="sk">*Nazov - Uplny a presny nazov pravnickej osoby
+                        tak, ako je uvedeny v Obchodnom registri SR, pripadne v inej evidencii, ak
+                        sa pravnicka osoba nezapisuje do Obchodneho registra SR.</xs:documentation>
                     </xs:annotation>
                   </xs:element>
-                  <xs:element name="OrganizationUnit" type="CorporateBodyFullNameTypeOpt" minOccurs="0" >
+                  <xs:element name="OrganizationUnit" type="CorporateBodyFullNameTypeOpt"
+                    minOccurs="0">
                     <xs:annotation>
-                      <xs:documentation xml:lang="sk">Organizacna zlozka - V pripade, ze rozhodnutie vydava konkretna organizacna zlozka, uvadza sa jej uplny a presny nazov.</xs:documentation>
+                      <xs:documentation xml:lang="sk">Organizacna zlozka - V pripade, ze rozhodnutie
+                        vydava konkretna organizacna zlozka, uvadza sa jej uplny a presny nazov.</xs:documentation>
                     </xs:annotation>
                   </xs:element>
                 </xs:sequence>
@@ -261,49 +280,55 @@
             <xs:element name="CorporateBody" minOccurs="0">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="CorporateBodyFullName" type="CorporateBodyFullNameTypeOpt" minOccurs="0" >
+                  <xs:element name="CorporateBodyFullName" type="CorporateBodyFullNameTypeOpt"
+                    minOccurs="0">
                     <xs:annotation>
-                      <xs:documentation xml:lang="sk">*Nazov - Uplny a presny nazov organu, ktory rozhodnutie vydava (ako je vedeny Statistickym uradom SR v Registri organizacii).</xs:documentation>
+                      <xs:documentation xml:lang="sk">*Nazov - Uplny a presny nazov organu, ktory
+                        rozhodnutie vydava (ako je vedeny Statistickym uradom SR v Registri
+                        organizacii).</xs:documentation>
                     </xs:annotation>
                   </xs:element>
-                  <xs:element name="OrganizationUnit" type="CorporateBodyFullNameTypeOpt" minOccurs="0" >
+                  <xs:element name="OrganizationUnit" type="CorporateBodyFullNameTypeOpt"
+                    minOccurs="0">
                     <xs:annotation>
-                      <xs:documentation xml:lang="sk">Organizacna zlozka - V pripade, ze rozhodnutie vydava konkretna organizacna zlozka, uvadza sa jej uplny a presny nazov.</xs:documentation>
+                      <xs:documentation xml:lang="sk">Organizacna zlozka - V pripade, ze rozhodnutie
+                        vydava konkretna organizacna zlozka, uvadza sa jej uplny a presny nazov.</xs:documentation>
                     </xs:annotation>
                   </xs:element>
-                  <xs:element name="Suffix" type="typeOfSuffix" minOccurs="0" >
+                  <xs:element name="Suffix" type="typeOfSuffix" minOccurs="0">
                     <xs:annotation>
-                      <xs:documentation xml:lang="sk">Sufix - Patmiestne alebo stvormiestne cislo. Sucast identifikatora elektronickej schranky subjektu v konkretnom pravnom postaveni, ak bol pri zriadeni schranky prideleny. Uvadza sa iba v pripade, ak ma subjekt pre jeden identifikator osoby (ICO) zriadenych viacero elektronickych schranok v roznych pravnych postaveniach alebo ak sa jedna o nezapisanu organizacnu zlozku organu verejnej moci.</xs:documentation>
+                      <xs:documentation xml:lang="sk">Sufix - Patmiestne alebo stvormiestne
+                        cislo. Sucast identifikatora elektronickej schranky subjektu v konkretnom
+                        pravnom postaveni, ak bol pri zriadeni schranky prideleny. Uvadza sa iba
+                        v pripade, ak ma subjekt pre jeden identifikator osoby (ICO) zriadenych
+                        viacero elektronickych schranok v roznych pravnych postaveniach alebo ak sa
+                        jedna o nezapisanu organizacnu zlozku organu verejnej moci.</xs:documentation>
                     </xs:annotation>
                   </xs:element>
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="PhysicalAddress" type="PhysicalAddressTypeWithoutCountry" minOccurs="0" />
+            <xs:element name="PhysicalAddress" type="PhysicalAddressTypeWithoutCountry"
+              minOccurs="0" />
             <xs:element name="ID" minOccurs="0">
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="IdentifierType" type="CodelistItemType" />
-                  <xs:element name="IdentifierValue" type="typeOfIco" >
+                  <xs:element name="IdentifierValue" type="typeOfIco">
                     <xs:annotation>
-                      <xs:documentation xml:lang="sk">*ICO - Identifikator v zmysle zakona c. 272/2015 Z. z. o registri pravnickych osob, podnikatelov a organov verejnej moci.  Uvadza sa v tvare bez medzier.</xs:documentation>
-                      <xs:appinfo>
-                        {
-                        "@context": {
-                        "dct": "http://purl.org/dc/terms/",
-                        "lsub": "https://data.gov.sk/def/ontology/legal-subject/",
-                        "pper": "https://data.gov.sk/def/ontology/physical-person/",
-                        "foaf": "http://xmlns.com/foaf/0.1/",
-                        "owl": "http://www.w3.org/2002/07/owl#",
-                        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-                        "skos": "http://www.w3.org/2004/02/skos/core#"
-                        },
-                        "@id": "https://data.gov.sk/id/egov/eform/RozhodnutieOpakovaneListinneDorucenie.sk/1.7/Adjudgement/Sender/CorporateBodyData/PersonData/ID/IdentifierValue"
-                        "@type": "lsub:LegalID",
-                        "dct:type": "https://data.gov.sk/def/identifier-type/7"
-                        "dct:references": "skos:notation"
-                        }
-                      </xs:appinfo>
+                      <xs:documentation xml:lang="sk">*ICO - Identifikator v zmysle zakona c.
+                        272/2015 Z. z. o registri pravnickych osob, podnikatelov a organov verejnej
+                        moci. Uvadza sa v tvare bez medzier.</xs:documentation>
+                      <xs:appinfo> { "@context": { "dct": "http://purl.org/dc/terms/", "lsub":
+                        "https://data.gov.sk/def/ontology/legal-subject/", "pper":
+                        "https://data.gov.sk/def/ontology/physical-person/", "foaf":
+                        "http://xmlns.com/foaf/0.1/", "owl": "http://www.w3.org/2002/07/owl#",
+                        "rdfs": "http://www.w3.org/2000/01/rdf-schema#", "skos":
+                        "http://www.w3.org/2004/02/skos/core#" }, "@id":
+                        "https://data.gov.sk/id/egov/eform/OpakovaneListinneDorucenie.sk/1.7/Adjudgement/Sender/CorporateBodyData/PersonData/ID/IdentifierValue"
+                        "@type": "lsub:LegalID", "dct:type":
+                        "https://data.gov.sk/def/identifier-type/7" "dct:references":
+                        "skos:notation" } </xs:appinfo>
                     </xs:annotation>
                   </xs:element>
                 </xs:sequence>
@@ -333,32 +358,37 @@
   </xs:complexType>
   <xs:complexType name="PhysicalAddressTypeWithoutCountry">
     <xs:sequence>
-      <xs:element name="Municipality" type="CodelistHybridType" minOccurs="0" >
+      <xs:element name="Municipality" type="CodelistHybridType" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="sk">*Mesto - Nazov obce/mesta.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="StreetName" type="typeOfString100" minOccurs="0" >
+      <xs:element name="StreetName" type="typeOfString100" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="sk">*Ulica - Nazov ulice, kde organ, ktory rozhodnutie vydava, sidli.</xs:documentation>
+          <xs:documentation xml:lang="sk">*Ulica - Nazov ulice, kde organ, ktory rozhodnutie vydava,
+            sidli.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="BuildingNumber" type="BuildingNumberType" minOccurs="0" >
+      <xs:element name="BuildingNumber" type="BuildingNumberType" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="sk">Orientacne cislo - Unikatne cislo pridelene budove v ramci ulice.</xs:documentation>
+          <xs:documentation xml:lang="sk">Orientacne cislo - Unikatne cislo pridelene budove v ramci
+            ulice.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="PropertyRegistrationNumber" type="PropertyRegistrationNumberType" minOccurs="0" >
+      <xs:element name="PropertyRegistrationNumber" type="PropertyRegistrationNumberType"
+        minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="sk">Supisne cislo - Moze sa uviest unikatne cislo pridelene budove v ramci katastralneho uzemia.</xs:documentation>
+          <xs:documentation xml:lang="sk">Supisne cislo - Moze sa uviest unikatne cislo pridelene
+            budove v ramci katastralneho uzemia.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="DeliveryAddress" minOccurs="0">
         <xs:complexType>
           <xs:sequence>
-            <xs:element name="PostalCode" type="typeOfPostalCode" minOccurs="0" >
+            <xs:element name="PostalCode" type="typeOfPostalCode" minOccurs="0">
               <xs:annotation>
-                <xs:documentation xml:lang="sk">*PSC - Postove smerovacie cislo obce/mesta bez medzier.</xs:documentation>
+                <xs:documentation xml:lang="sk">*PSC - Postove smerovacie cislo obce/mesta bez
+                  medzier.</xs:documentation>
               </xs:annotation>
             </xs:element>
           </xs:sequence>
@@ -368,37 +398,42 @@
   </xs:complexType>
   <xs:complexType name="PhysicalAddressType">
     <xs:sequence>
-      <xs:element name="Country" type="CodelistItemType" minOccurs="0" >
+      <xs:element name="Country" type="CodelistItemType" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="sk">*Stat - Presny nazov statu (priklad: Slovenska republika).</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Municipality" type="CodelistHybridType" minOccurs="0" >
+      <xs:element name="Municipality" type="CodelistHybridType" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="sk">*Mesto - Nazov obce/mesta.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="StreetName" type="typeOfString100" minOccurs="0" >
+      <xs:element name="StreetName" type="typeOfString100" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="sk">*Ulica - Nazov ulice, kde ma adresat trvaly/prechodny pobyt.</xs:documentation>
+          <xs:documentation xml:lang="sk">*Ulica - Nazov ulice, kde ma adresat trvaly/prechodny
+            pobyt.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="BuildingNumber" type="BuildingNumberType" minOccurs="0" >
+      <xs:element name="BuildingNumber" type="BuildingNumberType" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="sk">Orientacne cislo - Unikatne cislo pridelene budove v ramci ulice.</xs:documentation>
+          <xs:documentation xml:lang="sk">Orientacne cislo - Unikatne cislo pridelene budove v ramci
+            ulice.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="PropertyRegistrationNumber" type="PropertyRegistrationNumberType" minOccurs="0" >
+      <xs:element name="PropertyRegistrationNumber" type="PropertyRegistrationNumberType"
+        minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="sk">Supisne cislo - Moze sa uviest unikatne cislo pridelene budove v ramci katastralneho uzemia.</xs:documentation>
+          <xs:documentation xml:lang="sk">Supisne cislo - Moze sa uviest unikatne cislo pridelene
+            budove v ramci katastralneho uzemia.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="DeliveryAddress" minOccurs="0">
         <xs:complexType>
           <xs:sequence>
-            <xs:element name="PostalCode" type="typeOfPostalCode" minOccurs="0" >
+            <xs:element name="PostalCode" type="typeOfPostalCode" minOccurs="0">
               <xs:annotation>
-                <xs:documentation xml:lang="sk">*PSC - Postove smerovacie cislo obce/mesta bez medzier.</xs:documentation>
+                <xs:documentation xml:lang="sk">*PSC - Postove smerovacie cislo obce/mesta bez
+                  medzier.</xs:documentation>
               </xs:annotation>
             </xs:element>
           </xs:sequence>
@@ -419,54 +454,39 @@
   </xs:complexType>
   <xs:complexType name="PersonNameType">
     <xs:sequence>
-      <xs:element name="GivenName" type="typeOfString255" minOccurs="0" maxOccurs="1" >
+      <xs:element name="GivenName" type="typeOfString255" minOccurs="0" maxOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="sk">*Meno - Krstne meno adresata.</xs:documentation>
-          <xs:appinfo>
-            {
-            "@context": {
-            "dct": "http://purl.org/dc/terms/",
-            "lsub": "https://data.gov.sk/def/ontology/legal-subject/",
-            "pper": "https://data.gov.sk/def/ontology/physical-person/",
-            "foaf": "http://xmlns.com/foaf/0.1/",
-            "owl": "http://www.w3.org/2002/07/owl#",
-            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-            "skos": "http://www.w3.org/2004/02/skos/core#"
-            },
-            "@id": "https://data.gov.sk/id/egov/eform/RozhodnutieOpakovaneListinneDorucenie.sk/1.7/Adjudgement/Recipient/PhysicalPersonData/PersonData/PhysicalPerson/PersonName/GivenName"
-            "@type": "pper:PersonName",
-            "dct:references": "pper:name"
-            }
-          </xs:appinfo>
+          <xs:appinfo> { "@context": { "dct": "http://purl.org/dc/terms/", "lsub":
+            "https://data.gov.sk/def/ontology/legal-subject/", "pper":
+            "https://data.gov.sk/def/ontology/physical-person/", "foaf":
+            "http://xmlns.com/foaf/0.1/", "owl": "http://www.w3.org/2002/07/owl#", "rdfs":
+            "http://www.w3.org/2000/01/rdf-schema#", "skos": "http://www.w3.org/2004/02/skos/core#"
+            }, "@id":
+            "https://data.gov.sk/id/egov/eform/OpakovaneListinneDorucenie.sk/1.7/Adjudgement/Recipient/PhysicalPersonData/PersonData/PhysicalPerson/PersonName/GivenName"
+            "@type": "pper:PersonName", "dct:references": "pper:name" } </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="FamilyName" type="typeOfString255" minOccurs="0" maxOccurs="1" >
+      <xs:element name="FamilyName" type="typeOfString255" minOccurs="0" maxOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="sk">*Priezvisko - Priezvisko adresata.</xs:documentation>
-          <xs:appinfo>
-            {
-            "@context": {
-            "dct": "http://purl.org/dc/terms/",
-            "lsub": "https://data.gov.sk/def/ontology/legal-subject/",
-            "pper": "https://data.gov.sk/def/ontology/physical-person/",
-            "foaf": "http://xmlns.com/foaf/0.1/",
-            "owl": "http://www.w3.org/2002/07/owl#",
-            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-            "skos": "http://www.w3.org/2004/02/skos/core#"
-            },
-            "@id": "https://data.gov.sk/id/egov/eform/RozhodnutieOpakovaneListinneDorucenie.sk/1.7/Adjudgement/Recipient/PhysicalPersonData/PersonData/PhysicalPerson/PersonName/FamilyName"
-            "@type": "pper:PersonName",
-            "dct:references": "pper:familyName"
-            }
-          </xs:appinfo>
+          <xs:appinfo> { "@context": { "dct": "http://purl.org/dc/terms/", "lsub":
+            "https://data.gov.sk/def/ontology/legal-subject/", "pper":
+            "https://data.gov.sk/def/ontology/physical-person/", "foaf":
+            "http://xmlns.com/foaf/0.1/", "owl": "http://www.w3.org/2002/07/owl#", "rdfs":
+            "http://www.w3.org/2000/01/rdf-schema#", "skos": "http://www.w3.org/2004/02/skos/core#"
+            }, "@id":
+            "https://data.gov.sk/id/egov/eform/OpakovaneListinneDorucenie.sk/1.7/Adjudgement/Recipient/PhysicalPersonData/PersonData/PhysicalPerson/PersonName/FamilyName"
+            "@type": "pper:PersonName", "dct:references": "pper:familyName" } </xs:appinfo>
         </xs:annotation>
       </xs:element>
       <xs:element name="Prefix" minOccurs="0">
         <xs:complexType>
           <xs:sequence>
-            <xs:element name="Affix" type="AffixXsdPrefixType" minOccurs="0" maxOccurs="1" >
+            <xs:element name="Affix" type="AffixXsdPrefixType" minOccurs="0" maxOccurs="1">
               <xs:annotation>
-                <xs:documentation xml:lang="sk">Titul pred - Konkretny titul udeleny adresatovi pred menom (priklad: Bc., Mgr., Ing., MUDr., JUDr.).</xs:documentation>
+                <xs:documentation xml:lang="sk">Titul pred - Konkretny titul udeleny adresatovi pred
+                  menom (priklad: Bc., Mgr., Ing., MUDr., JUDr.).</xs:documentation>
               </xs:annotation>
             </xs:element>
           </xs:sequence>
@@ -475,9 +495,10 @@
       <xs:element name="Postfix" minOccurs="0">
         <xs:complexType>
           <xs:sequence>
-            <xs:element name="Affix" type="AffixXsdPostfixType" minOccurs="0" maxOccurs="1" >
+            <xs:element name="Affix" type="AffixXsdPostfixType" minOccurs="0" maxOccurs="1">
               <xs:annotation>
-                <xs:documentation xml:lang="sk">Titul za - Konkretny titul uvedeny adresatovi za priezviskom (priklad: PhD., CSc., DrSc.).</xs:documentation>
+                <xs:documentation xml:lang="sk">Titul za - Konkretny titul uvedeny adresatovi za
+                  priezviskom (priklad: PhD., CSc., DrSc.).</xs:documentation>
               </xs:annotation>
             </xs:element>
           </xs:sequence>
@@ -488,18 +509,21 @@
   <xs:complexType name="PhysicalPersonFormatedType">
     <xs:sequence>
       <xs:element name="PersonName" type="PersonNameFormatedType" minOccurs="0" />
-      <xs:element name="Position" type="typeOfString1023" minOccurs="0" >
+      <xs:element name="Position" type="typeOfString1023" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="sk">*Funkcia autorizujucej osoby - Pracovne zaradenie osoby opravnenej rozhodnutie podpisat alebo zapecatit, priklad: riaditel odboru verejneho obstaravania.</xs:documentation>
+          <xs:documentation xml:lang="sk">*Funkcia autorizujucej osoby - Pracovne zaradenie osoby
+            opravnenej rozhodnutie podpisat alebo zapecatit, priklad: riaditel odboru verejneho
+            obstaravania.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="PersonNameFormatedType">
     <xs:sequence>
-      <xs:element name="FormattedName" type="typeOfString1023" minOccurs="0" >
+      <xs:element name="FormattedName" type="typeOfString1023" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="sk">*Meno a priezvisko autorizujucej osoby - Meno a priezvisko osoby opravnenej rozhodnutie podpisat alebo zapecatit.</xs:documentation>
+          <xs:documentation xml:lang="sk">*Meno a priezvisko autorizujucej osoby - Meno a priezvisko
+            osoby opravnenej rozhodnutie podpisat alebo zapecatit.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -570,7 +594,7 @@
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="typeOfDate">
-    <xs:restriction base="xs:date"/>
+    <xs:restriction base="xs:date" />
   </xs:simpleType>
   <xs:simpleType name="typeOfString127">
     <xs:restriction base="xs:string">
@@ -622,9 +646,9 @@
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="typeOfString">
-    <xs:restriction base="xs:string"/>
+    <xs:restriction base="xs:string" />
   </xs:simpleType>
   <xs:simpleType name="typeOfLogo">
-    <xs:restriction base="xs:string"/>
+    <xs:restriction base="xs:string" />
   </xs:simpleType>
 </xs:schema>

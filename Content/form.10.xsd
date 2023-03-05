@@ -1,413 +1,553 @@
-<?xml version="1.0" encoding="UTF-8"?><xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.gov.sk/form/42156424.RozhodnutieOpakovaneListinneDorucenie.sk/1.0" xmlns="http://schemas.gov.sk/form/42156424.RozhodnutieOpakovaneListinneDorucenie.sk/1.0">
-<xs:simpleType name="typeOfString100">
-<xs:restriction base="xs:string">
-<xs:maxLength value="100" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="PropertyRegistrationNumberType">
-<xs:restriction base="xs:string">
-<xs:pattern value="|\d{1,10}" />
-<xs:maxLength value="10" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="BuildingNumberType">
-<xs:restriction base="xs:string">
-<xs:pattern value="|.{1,20}" />
-<xs:maxLength value="20" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfString128">
-<xs:restriction base="xs:string">
-<xs:maxLength value="128" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfPostalCode">
-<xs:restriction base="xs:string">
-<xs:pattern value="|.{1,12}" />
-<xs:maxLength value="12" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfString255TextArea">
-<xs:restriction base="xs:string">
-<xs:maxLength value="255" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfIco">
-<xs:restriction base="xs:string">
-<xs:pattern value="|\d{8}|\d{12}" />
-<xs:maxLength value="12" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfSuffix">
-<xs:restriction base="xs:string">
-<xs:pattern value="|\d{4,5}" />
-<xs:maxLength value="5" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfString127">
-<xs:restriction base="xs:string">
-<xs:maxLength value="127" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="ldt_Datum">
-<xs:restriction base="xs:date">
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfStringTextArea">
-<xs:restriction base="xs:string">
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfString4096">
-<xs:restriction base="xs:string">
-<xs:maxLength value="4096" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfString255">
-<xs:restriction base="xs:string">
-<xs:maxLength value="255" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfString1023">
-<xs:restriction base="xs:string">
-<xs:maxLength value="1023" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="tyeOfFOPO">
-<xs:restriction base="xs:string">
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfCountry">
-<xs:restriction base="xs:string">
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="TypeAfixPrefix">
-<xs:restriction base="xs:string">
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfString256">
-<xs:restriction base="xs:string">
-<xs:maxLength value="256" />
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="TypeAfixPostfix">
-<xs:restriction base="xs:string">
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfString">
-<xs:restriction base="xs:string">
-</xs:restriction>
-</xs:simpleType>
-<xs:simpleType name="typeOfString2048">
-<xs:restriction base="xs:string">
-<xs:maxLength value="2048" />
-</xs:restriction>
-</xs:simpleType>
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.2"
+    xmlns="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.2">
+    <xs:simpleType name="typeOfString100">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="100" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="PropertyRegistrationNumberType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="|\d{1,10}" />
+            <xs:maxLength value="10" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BuildingNumberType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="|.{1,20}" />
+            <xs:maxLength value="20" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfString128">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="128" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfPostalCode">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="|.{1,12}" />
+            <xs:maxLength value="12" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfString255TextArea">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="255" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfIco">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="|\d{8}|\d{12}" />
+            <xs:maxLength value="12" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfSuffix">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="|\d{4,5}" />
+            <xs:maxLength value="5" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfString127">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="127" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ldt_Datum">
+        <xs:restriction base="xs:date">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfStringTextArea">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfString4096">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="4096" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfString255">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="255" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfString1023">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="1023" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tyeOfFOPO">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfCountry">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TypeAfixPrefix">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfString256">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="256" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TypeAfixPostfix">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfString">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeOfString2048">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="2048" />
+        </xs:restriction>
+    </xs:simpleType>
 
 
-<xs:element name="Dokument">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="SecSender" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="SecSenderName" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="Title" type="typeOfString255TextArea" minOccurs="1" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecSenderOrganizationUnit" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="SenderOrganizationUnit" type="typeOfString255TextArea" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecSenderIdentifierSuffix" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="Ico" type="typeOfIco" minOccurs="1" />
-<xs:element name="IdentifierTypeCodelistCode" type="typeOfString100" minOccurs="0" nillable="true" />
-<xs:element name="IdentifierTypeItemCode" type="typeOfString128" minOccurs="0" nillable="true" />
-<xs:element name="IdentifierTypeItemName" type="typeOfString128" minOccurs="0" nillable="true" />
-<xs:element name="Suffix" type="typeOfSuffix" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecSenderAdressStreetAndNumber" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="SenderStreetName" type="typeOfString100" minOccurs="1" />
-<xs:element name="SenderPropertyRegistrationNumber" type="PropertyRegistrationNumberType" minOccurs="0" nillable="true" />
-<xs:element name="SenderBuildingNumber" type="BuildingNumberType" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecSenderPostalCodeMunicipality" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="SenderPostalCode" type="typeOfPostalCode" minOccurs="1" />
-<xs:element name="SenderMunicipalityNonCodelistData" type="typeOfString128" minOccurs="1" />
-<xs:element name="SenderMunicipalityCodeList" type="typeOfString100" minOccurs="0" nillable="true" />
-<xs:element name="SenderMunicipalityItemCode" type="typeOfString128" minOccurs="0" nillable="true" />
-<xs:element name="SenderMunicipalityItemName" type="typeOfString128" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecEmptySection9" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecHandled" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="FileReference" type="typeOfString128" minOccurs="1" />
-<xs:element name="MunicipalityPlace" type="typeOfString127" minOccurs="1" />
-<xs:element name="Date" type="ldt_Datum" minOccurs="1" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecLogo" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecEmptySection4" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecRozhodnutie" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="Subject" type="typeOfString1023" minOccurs="1" />
-<xs:element name="Rozhodnutie" type="typeOfStringTextArea" minOccurs="1" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecEmptySection10" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecUcastniciKonania" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="UcastniciKonania" type="typeOfStringTextArea" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecEmptySection" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecVyrokRozhodnutia" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="VyrokRozhodnutia" type="typeOfStringTextArea" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecEmptySection7" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecOdovodnenie" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="Odovodnenie" type="typeOfStringTextArea" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecEmptySection8" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecPoucenie" minOccurs="0" maxOccurs="1">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="Poucenie" type="typeOfStringTextArea" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecEmptySection2" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecAttachment" minOccurs="0" maxOccurs="1">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="SecAttachmentInner" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="AttachmentVal" type="typeOfString4096" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="AttachmentInfo" type="typeOfStringTextArea" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecEmptySection5" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecCreatorPersonData" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="CreatorPerson" minOccurs="1" maxOccurs="99">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="CreatorPersonName" type="typeOfString255" minOccurs="1" />
-<xs:element name="Position" type="typeOfString1023" minOccurs="1" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecEmptySection3" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecDorucujeSa" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="Recipient" minOccurs="1" maxOccurs="9999">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="SubjectTypeFOPO" type="tyeOfFOPO" minOccurs="1" />
-<xs:element name="RecipientFO" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="SecRecipientNameFO" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="RecipientAfixPrefixCodelistCode" type="typeOfString128" minOccurs="0" nillable="true" />
-<xs:element name="RecipientAfixPrefixItemName" type="TypeAfixPrefix" minOccurs="0" nillable="true" />
-<xs:element name="RecipientAfixPrefixItemCode" type="typeOfString256" minOccurs="0" nillable="true" />
-<xs:element name="RecipientGivenName" type="typeOfString255" minOccurs="1" />
-<xs:element name="RecipientFamilyName" type="typeOfString255" minOccurs="1" />
-<xs:element name="RecipientAfixPostfixCodelistCode" type="typeOfString128" minOccurs="0" nillable="true" />
-<xs:element name="RecipientAfixPostfixItemName" type="TypeAfixPostfix" minOccurs="0" nillable="true" />
-<xs:element name="RecipientAfixPostfixItemCode" type="typeOfString256" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecRecipientAdressStreetAndNumberFO" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="RecipientStreetName" type="typeOfString100" minOccurs="1" />
-<xs:element name="RecipientPropertyRegistrationNumber" type="PropertyRegistrationNumberType" minOccurs="0" nillable="true" />
-<xs:element name="RecipientBuildingNumber" type="BuildingNumberType" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecRecipientPostalCodeMunicipalityCountryFO" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="RecipientPostalCode" type="typeOfPostalCode" minOccurs="1" />
-<xs:element name="RecipientMunicipalityNonCodelistData" type="typeOfString128" minOccurs="1" />
-<xs:element name="RecipientMunicipalityCodelistCode" type="typeOfString100" minOccurs="0" nillable="true" />
-<xs:element name="RecipientMunicipalityItemCode" type="typeOfString128" minOccurs="0" nillable="true" />
-<xs:element name="RecipientMunicipalityItemName" type="typeOfString128" minOccurs="0" nillable="true" />
-<xs:element name="RecipientPostalCountryItemName" type="typeOfCountry" minOccurs="1" />
-<xs:element name="RecipientPostalCountryItemCode" type="typeOfString255" minOccurs="0" nillable="true" />
-<xs:element name="RecipientPostalCountryCodelistCode" type="typeOfString100" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="RecipientPO" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="SecRecipientCorporateBodyFullNamePO" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="RecipientCorporateBodyFullName" type="typeOfString255TextArea" minOccurs="1" />
-<xs:element name="RecipientOrganizationUnit" type="typeOfString255TextArea" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecRecipientAdressStreetAndNumberPO" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="RecipientStreetNamePO" type="typeOfString100" minOccurs="1" />
-<xs:element name="RecipientPropertyRegistrationNumberPO" type="PropertyRegistrationNumberType" minOccurs="0" nillable="true" />
-<xs:element name="RecipientBuildingNumberPO" type="BuildingNumberType" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecRecipientPostalCodeMunicipalityCountryPO" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="RecipientPostalCodePO" type="typeOfPostalCode" minOccurs="1" />
-<xs:element name="RecipientMunicipalityNonCodelistDataPO" type="typeOfString128" minOccurs="1" />
-<xs:element name="RecipientMunicipalityCodelistCodePO" type="typeOfString100" minOccurs="0" nillable="true" />
-<xs:element name="RecipientMunicipalityItemCodePO" type="typeOfString128" minOccurs="0" nillable="true" />
-<xs:element name="RecipientMunicipalityItemNamePO" type="typeOfString128" minOccurs="0" nillable="true" />
-<xs:element name="RecipientPostalCountryItemNamePO" type="typeOfCountry" minOccurs="1" />
-<xs:element name="RecipientPostalCountryItemCodePO" type="typeOfString256" minOccurs="0" nillable="true" />
-<xs:element name="RecipientPostalCountryCodelistCodePO" type="typeOfString100" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecEmptySection6" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecForInformation" minOccurs="0" maxOccurs="1">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="ForInformationRecipient" type="typeOfStringTextArea" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="SecEmptySection11" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="AdjudgementType" type="typeOfString127" minOccurs="0" nillable="true" />
-<xs:element name="AdjudgementLogo" type="typeOfString" minOccurs="0" nillable="true" />
-<xs:element name="ReferenceIdentifier" type="typeOfString2048" minOccurs="0" nillable="true" />
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
+    <xs:element name="Dokument">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="SecSender" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="SecSenderName" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Title" type="typeOfString255TextArea"
+                                            minOccurs="1" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="SecSenderOrganizationUnit" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="SenderOrganizationUnit"
+                                            type="typeOfString255TextArea" minOccurs="0"
+                                            nillable="true" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="SecSenderIdentifierSuffix" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Ico" type="typeOfIco" minOccurs="1" />
+                                        <xs:element name="IdentifierTypeCodelistCode"
+                                            type="typeOfString100" minOccurs="0" nillable="true" />
+                                        <xs:element name="IdentifierTypeItemCode"
+                                            type="typeOfString128" minOccurs="0" nillable="true" />
+                                        <xs:element name="IdentifierTypeItemName"
+                                            type="typeOfString128" minOccurs="0" nillable="true" />
+                                        <xs:element name="Suffix" type="typeOfSuffix" minOccurs="0"
+                                            nillable="true" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="SecSenderAdressStreetAndNumber" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="SenderStreetName" type="typeOfString100"
+                                            minOccurs="1" />
+                                        <xs:element name="SenderPropertyRegistrationNumber"
+                                            type="PropertyRegistrationNumberType" minOccurs="0"
+                                            nillable="true" />
+                                        <xs:element name="SenderBuildingNumber"
+                                            type="BuildingNumberType" minOccurs="0" nillable="true" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="SecSenderPostalCodeMunicipality" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="SenderPostalCode" type="typeOfPostalCode"
+                                            minOccurs="1" />
+                                        <xs:element name="SenderMunicipalityNonCodelistData"
+                                            type="typeOfString128" minOccurs="1" />
+                                        <xs:element name="SenderMunicipalityCodeList"
+                                            type="typeOfString100" minOccurs="0" nillable="true" />
+                                        <xs:element name="SenderMunicipalityItemCode"
+                                            type="typeOfString128" minOccurs="0" nillable="true" />
+                                        <xs:element name="SenderMunicipalityItemName"
+                                            type="typeOfString128" minOccurs="0" nillable="true" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecEmptySection9" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecHandled" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="FileReference" type="typeOfString128" minOccurs="1" />
+                            <xs:element name="MunicipalityPlace" type="typeOfString127"
+                                minOccurs="1" />
+                            <xs:element name="Date" type="ldt_Datum" minOccurs="1" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecLogo" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecEmptySection4" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecRozhodnutie" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Subject" type="typeOfString1023" minOccurs="1" />
+                            <xs:element name="Rozhodnutie" type="typeOfStringTextArea" minOccurs="1" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecEmptySection10" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecUcastniciKonania" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="UcastniciKonania" type="typeOfStringTextArea"
+                                minOccurs="0" nillable="true" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecEmptySection" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecVyrokRozhodnutia" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="VyrokRozhodnutia" type="typeOfStringTextArea"
+                                minOccurs="0" nillable="true" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecEmptySection7" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecOdovodnenie" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Odovodnenie" type="typeOfStringTextArea" minOccurs="0"
+                                nillable="true" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecEmptySection8" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecPoucenie" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Poucenie" type="typeOfStringTextArea" minOccurs="0"
+                                nillable="true" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecEmptySection2" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecAttachment" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="SecAttachmentInner" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="AttachmentVal" type="typeOfString4096"
+                                            minOccurs="0" nillable="true" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="AttachmentInfo" type="typeOfStringTextArea"
+                                minOccurs="0" nillable="true" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecEmptySection5" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecCreatorPersonData" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CreatorPerson" minOccurs="1" maxOccurs="99">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="CreatorPersonName" type="typeOfString255"
+                                            minOccurs="1" />
+                                        <xs:element name="Position" type="typeOfString1023"
+                                            minOccurs="1" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecEmptySection3" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecDorucujeSa" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Recipient" minOccurs="1" maxOccurs="9999">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="SubjectTypeFOPO" type="tyeOfFOPO"
+                                            minOccurs="1" />
+                                        <xs:element name="RecipientFO" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="SecRecipientNameFO"
+                                                        minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element
+                                                                    name="RecipientAfixPrefixCodelistCode"
+                                                                    type="typeOfString128"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientAfixPrefixItemName"
+                                                                    type="TypeAfixPrefix"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientAfixPrefixItemCode"
+                                                                    type="typeOfString256"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientGivenName"
+                                                                    type="typeOfString255"
+                                                                    minOccurs="1" />
+                                                                <xs:element
+                                                                    name="RecipientFamilyName"
+                                                                    type="typeOfString255"
+                                                                    minOccurs="1" />
+                                                                <xs:element
+                                                                    name="RecipientAfixPostfixCodelistCode"
+                                                                    type="typeOfString128"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientAfixPostfixItemName"
+                                                                    type="TypeAfixPostfix"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientAfixPostfixItemCode"
+                                                                    type="typeOfString256"
+                                                                    minOccurs="0" nillable="true" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element
+                                                        name="SecRecipientAdressStreetAndNumberFO"
+                                                        minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element
+                                                                    name="RecipientStreetName"
+                                                                    type="typeOfString100"
+                                                                    minOccurs="1" />
+                                                                <xs:element
+                                                                    name="RecipientPropertyRegistrationNumber"
+                                                                    type="PropertyRegistrationNumberType"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientBuildingNumber"
+                                                                    type="BuildingNumberType"
+                                                                    minOccurs="0" nillable="true" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element
+                                                        name="SecRecipientPostalCodeMunicipalityCountryFO"
+                                                        minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element
+                                                                    name="RecipientPostalCode"
+                                                                    type="typeOfPostalCode"
+                                                                    minOccurs="1" />
+                                                                <xs:element
+                                                                    name="RecipientMunicipalityNonCodelistData"
+                                                                    type="typeOfString128"
+                                                                    minOccurs="1" />
+                                                                <xs:element
+                                                                    name="RecipientMunicipalityCodelistCode"
+                                                                    type="typeOfString100"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientMunicipalityItemCode"
+                                                                    type="typeOfString128"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientMunicipalityItemName"
+                                                                    type="typeOfString128"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientPostalCountryItemName"
+                                                                    type="typeOfCountry"
+                                                                    minOccurs="1" />
+                                                                <xs:element
+                                                                    name="RecipientPostalCountryItemCode"
+                                                                    type="typeOfString255"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientPostalCountryCodelistCode"
+                                                                    type="typeOfString100"
+                                                                    minOccurs="0" nillable="true" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="RecipientPO" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element
+                                                        name="SecRecipientCorporateBodyFullNamePO"
+                                                        minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element
+                                                                    name="RecipientCorporateBodyFullName"
+                                                                    type="typeOfString255TextArea"
+                                                                    minOccurs="1" />
+                                                                <xs:element
+                                                                    name="RecipientOrganizationUnit"
+                                                                    type="typeOfString255TextArea"
+                                                                    minOccurs="0" nillable="true" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element
+                                                        name="SecRecipientAdressStreetAndNumberPO"
+                                                        minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element
+                                                                    name="RecipientStreetNamePO"
+                                                                    type="typeOfString100"
+                                                                    minOccurs="1" />
+                                                                <xs:element
+                                                                    name="RecipientPropertyRegistrationNumberPO"
+                                                                    type="PropertyRegistrationNumberType"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientBuildingNumberPO"
+                                                                    type="BuildingNumberType"
+                                                                    minOccurs="0" nillable="true" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element
+                                                        name="SecRecipientPostalCodeMunicipalityCountryPO"
+                                                        minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element
+                                                                    name="RecipientPostalCodePO"
+                                                                    type="typeOfPostalCode"
+                                                                    minOccurs="1" />
+                                                                <xs:element
+                                                                    name="RecipientMunicipalityNonCodelistDataPO"
+                                                                    type="typeOfString128"
+                                                                    minOccurs="1" />
+                                                                <xs:element
+                                                                    name="RecipientMunicipalityCodelistCodePO"
+                                                                    type="typeOfString100"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientMunicipalityItemCodePO"
+                                                                    type="typeOfString128"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientMunicipalityItemNamePO"
+                                                                    type="typeOfString128"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientPostalCountryItemNamePO"
+                                                                    type="typeOfCountry"
+                                                                    minOccurs="1" />
+                                                                <xs:element
+                                                                    name="RecipientPostalCountryItemCodePO"
+                                                                    type="typeOfString256"
+                                                                    minOccurs="0" nillable="true" />
+                                                                <xs:element
+                                                                    name="RecipientPostalCountryCodelistCodePO"
+                                                                    type="typeOfString100"
+                                                                    minOccurs="0" nillable="true" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecEmptySection6" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecForInformation" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ForInformationRecipient" type="typeOfStringTextArea"
+                                minOccurs="0" nillable="true" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SecEmptySection11" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="AdjudgementType" type="typeOfString127" minOccurs="0"
+                                nillable="true" />
+                            <xs:element name="AdjudgementLogo" type="typeOfString" minOccurs="0"
+                                nillable="true" />
+                            <xs:element name="ReferenceIdentifier" type="typeOfString2048"
+                                minOccurs="0" nillable="true" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>
-

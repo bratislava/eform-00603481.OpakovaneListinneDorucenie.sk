@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><Dokument xmlns="http://schemas.gov.sk/form/42156424.RozhodnutieOpakovaneListinneDorucenie.sk/1.0" xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?>
+<Dokument xmlns="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.2"
+  xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SecSender>
     <SecSenderName>
       <Title></Title>

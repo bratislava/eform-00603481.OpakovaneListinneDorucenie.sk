@@ -1,1 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><PublishedFormVersionMetadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PublishingDate="4. 8. 2020" DesignerVersion="1.18.0.0"><Form Name="Rozhodnutie - doručenie do vlastných rúk" Identifier="NA" Gestor="NA" Purpose="NA"><FormVersion Identifier="42156424.RozhodnutieOpakovaneListinneDorucenie.sk" ID="10" Guid="4faac9b2-d4ab-476d-bfb3-b62905fefb87" Version="1.0" ValidFrom="28. 6. 2018 14:45:04" ValidTo="28. 6. 2018 14:45:04" Language="SK"><Mapping TranslatorType="Dictionary" IsFieldMappingUsed="false" ConvertCetToUtc="false" /><RemoteLookups><RemoteLookup ControlId="RecipientPostalCountryItemName" RemoteLookupCode="SUSR_0086" RemoteSourceIdentifier="" RemoteDefaultValue="" RemoteSortCriterium="" RemoteControlType="RemoteLookup" RemoteNotCache="false" /><RemoteLookup ControlId="RecipientAfixPrefixItemName" RemoteLookupCode="SUSR_0062" RemoteSourceIdentifier="" RemoteDefaultValue="" RemoteSortCriterium="" RemoteControlType="RemoteLookup" RemoteNotCache="false" /><RemoteLookup ControlId="RecipientAfixPostfixItemName" RemoteLookupCode="SUSR_0063" RemoteSourceIdentifier="" RemoteDefaultValue="" RemoteSortCriterium="" RemoteControlType="RemoteLookup" RemoteNotCache="false" /><RemoteLookup ControlId="RecipientPostalCountryItemNamePO" RemoteLookupCode="SUSR_0086" RemoteSourceIdentifier="" RemoteDefaultValue="" RemoteSortCriterium="" RemoteControlType="RemoteLookup" RemoteNotCache="false" /></RemoteLookups><Fids /><XPathInfo><Constants /></XPathInfo><Plugins /></FormVersion></Form></PublishedFormVersionMetadata>
+<?xml version="1.0" encoding="utf-8"?>
+<PublishedFormVersionMetadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" PublishingDate="4. 8. 2020"
+    DesignerVersion="1.18.0.0">
+    <Form Name="Rozhodnutie - doručenie do vlastných rúk" Identifier="NA" Gestor="NA" Purpose="NA">
+        <FormVersion Identifier="00603481.OpakovaneListinneDorucenie.sk" ID="10"
+            Guid="4faac9b2-d4ab-476d-bfb3-b62905fefb87" Version="1.0"
+            ValidFrom="28. 6. 2018 14:45:04" ValidTo="28. 6. 2018 14:45:04" Language="SK">
+            <Mapping TranslatorType="Dictionary" IsFieldMappingUsed="false" ConvertCetToUtc="false" />
+            <RemoteLookups>
+                <RemoteLookup ControlId="RecipientPostalCountryItemName"
+                    RemoteLookupCode="SUSR_0086" RemoteSourceIdentifier="" RemoteDefaultValue=""
+                    RemoteSortCriterium="" RemoteControlType="RemoteLookup" RemoteNotCache="false" />
+                <RemoteLookup ControlId="RecipientAfixPrefixItemName" RemoteLookupCode="SUSR_0062"
+                    RemoteSourceIdentifier="" RemoteDefaultValue="" RemoteSortCriterium=""
+                    RemoteControlType="RemoteLookup" RemoteNotCache="false" />
+                <RemoteLookup ControlId="RecipientAfixPostfixItemName" RemoteLookupCode="SUSR_0063"
+                    RemoteSourceIdentifier="" RemoteDefaultValue="" RemoteSortCriterium=""
+                    RemoteControlType="RemoteLookup" RemoteNotCache="false" />
+                <RemoteLookup ControlId="RecipientPostalCountryItemNamePO"
+                    RemoteLookupCode="SUSR_0086" RemoteSourceIdentifier="" RemoteDefaultValue=""
+                    RemoteSortCriterium="" RemoteControlType="RemoteLookup" RemoteNotCache="false" />
+            </RemoteLookups>
+            <Fids />
+            <XPathInfo>
+                <Constants />
+            </XPathInfo>
+            <Plugins />
+        </FormVersion>
+    </Form>
+</PublishedFormVersionMetadata>
