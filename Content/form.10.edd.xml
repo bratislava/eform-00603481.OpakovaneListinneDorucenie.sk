@@ -1,0 +1,11 @@
+<PrefillDataMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Definition id="UPVS IAM Default Data">
+    <Item key="subject:Corporate.Address.Street" xpath="/egonp:Adjudgement/egonp:Sender/egonp:CorporateBodyData/egonp:PersonData/egonp:PhysicalAddress/egonp:StreetName" />
+    <Item key="subject:Corporate.Address.PropertyRegistrationNumber" xpath="/egonp:Adjudgement/egonp:Sender/egonp:CorporateBodyData/egonp:PersonData/egonp:PhysicalAddress/egonp:PropertyRegistrationNumber" />
+    <Item key="subject:Corporate.Address.BuildingNumber" xpath="/egonp:Adjudgement/egonp:Sender/egonp:CorporateBodyData/egonp:PersonData/egonp:PhysicalAddress/egonp:BuildingNumber" />
+    <Item key="subject:Corporate.Address.Municipality" xpath="/egonp:Adjudgement/egonp:Sender/egonp:CorporateBodyData/egonp:PersonData/egonp:PhysicalAddress/egonp:Municipality/egonp:NonCodelistData" />
+    <Item key="subject:Corporate.Name" xpath="/egonp:Adjudgement/egonp:Sender/egonp:CorporateBodyData/egonp:PersonData/egonp:CorporateBody/egonp:CorporateBodyFullName" />
+    <Item key="subject:Corporate.ICO" xpath="/egonp:Adjudgement/egonp:Sender/egonp:CorporateBodyData/egonp:PersonData/egonp:ID/egonp:IdentifierValue" />
+    <Item key="subject:Corporate.Suffix" xpath="/egonp:Adjudgement/egonp:Sender/egonp:CorporateBodyData/egonp:PersonData/egonp:CorporateBody/egonp:Suffix" />
+  </Definition>
+</PrefillDataMapping>
