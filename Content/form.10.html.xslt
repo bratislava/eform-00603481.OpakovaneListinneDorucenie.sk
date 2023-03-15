@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:egonp="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.2"
+  xmlns:egonp="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.3"
   exclude-result-prefixes="egonp">
   <xsl:output method="html" doctype-system="http://www.w3.org/TR/html4/strict.dtd"
     doctype-public="-//W3C//DTD HTML 4.01//EN" indent="no" omit-xml-declaration="yes" />

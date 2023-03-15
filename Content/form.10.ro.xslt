@@ -3,7 +3,7 @@
 	<!ENTITY nbsp "&#xa0;">
 ]>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:egonp="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.2"
+	xmlns:egonp="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.3"
 	exclude-result-prefixes="egonp">
 	<xsl:output method="html" doctype-system="http://www.w3.org/TR/html4/strict.dtd"
 		doctype-public="-//W3C//DTD HTML 4.01//EN" indent="no" omit-xml-declaration="yes" />
@@ -1914,10 +1914,10 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 				<style type="text/css">
 					.PozadieLightGreen {background:#f9fff7 ;}
 					.bezOkrajaBezPozadiaHlavicky {border:0px;background:none;}
-					.bezOkrajaBezPozadiaHlavicky > .caption {border:0px;background:none !important;}
+		.bezOkrajaBezPozadiaHlavicky > .caption {border:0px;background:none !important;}
 					.dolava8px {position:relative;left:-8px;}
 					.bezHlavicky > .caption {border:0px;background:none !important;}
-					.PozadieLightBlue {background:#f6fcfe ;}
+		.PozadieLightBlue {background:#f6fcfe ;}
 					.PozadieLightRedParent {background:#ffeaea ;}
 					.PozadieLightRed {background:#fff7f7 ;}
 					.tucnyText {font-weight:bold;}
@@ -1943,7 +1943,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 					.TextArea190x24pxNEW TEXTAREA { width:190px; height: 24px}
 					.TextArea190x24pxNEW INPUT { width:190px; height: 24px}
 					.Znenie LABEL {display: block; float: none; text-align: center; margin: 0 auto;
-					font-size: 1.2em; font-weight: bold;
+		font-size: 1.2em; font-weight: bold;
 					}
 
 					.Znenie .fieldContent {text-align: center; float: none;
@@ -1954,9 +1954,9 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 					.Znenie INPUT {min-width: 360px; text-align: center;}
 					.TextArea812x38pxNEW TEXTAREA { width:812px; height: 38px }
 					.TextArea812x38pxNEW INPUT { width:812px; height: 38px }
-					.tucnyCentrovanyTextNormal {text-align:center;font-weight:bold;}
+		.tucnyCentrovanyTextNormal {text-align:center;font-weight:bold;}
 					.tucnyCentrovanyTextNormal span {font-size:0.75em !important;}
-					.tucnyCentrovanyTextNormal .fieldLabel {margin: 5px 0 5px 0; width:100%}
+		.tucnyCentrovanyTextNormal .fieldLabel {margin: 5px 0 5px 0; width:100%}
 					.TextArea812x300px TEXTAREA { width:812px; height: 300px }
 					.TextArea812x300px INPUT { width:812px; height: 300px }
 
@@ -1965,7 +1965,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 			<body>
 				<noscript>
 					<p class="noscript">Pre kompletnú funkčnosť aplikácie je potrebné povoliť
-						JavaScript</p>
+		JavaScript</p>
 				</noscript>
 				<div id="errorsContainerDiv" class="errorsContainerDiv">
 					<ul id="errorsContainer" class="errorsContainer">
@@ -2032,7 +2032,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'Title']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:choose>
 																			<xsl:when
 																				test="./*[name() = 'Title']"><xsl:value-of
@@ -2046,24 +2046,26 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																			<p>
 																				<style
 																					type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					body {
-							font-family: 'Verdana';font-size: 16px; }
+		font-family: 'Verdana';font-size: 16px; }
 																					.p_6AAD5060 {
-							margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					.s_C1A2E899 {
-							font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
-							.s_D3FCB7B8 {
-																					font-family:
-							'Verdana';font-size: 16px; } </style>
+		font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
+																					.s_D3FCB7B8 {
+		font-family:
+																					'Verdana';font-size:
+		16px; } </style>
 																				<p
 																					class="p_6AAD5060">
 																					<span
 																						class="s_C1A2E899">Uveďte
-							úplný a presný názov orgánu, ktorý rozhodnutie vydáva (ako je vedený
-							Štatistickým úradom SR
+		úplný a presný názov orgánu, ktorý rozhodnutie vydáva (ako je vedený
+																						Štatistickým
+		úradom SR
 																						v Registri
-							organizácií). </span>
+		organizácií). </span>
 																					<span
 																						class="s_D3FCB7B8"></span>
 																				</p>
@@ -2118,7 +2120,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'SenderOrganizationUnit']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:choose>
 																			<xsl:when
 																				test="./*[name() = 'SenderOrganizationUnit']"><xsl:value-of
@@ -2132,22 +2134,24 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																			<p>
 																				<style
 																					type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					body {
-							font-family: 'Verdana';font-size: 16px; }
+		font-family: 'Verdana';font-size: 16px; }
 																					.p_6AAD5060 {
-							margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					.s_C1A2E899 {
-							font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
-							.s_D3FCB7B8 {
-																					font-family:
-							'Verdana';font-size: 16px; } </style>
+		font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
+																					.s_D3FCB7B8 {
+		font-family:
+																					'Verdana';font-size:
+		16px; } </style>
 																				<p
 																					class="p_6AAD5060">
 																					<span
 																						class="s_C1A2E899">V prípade,
-							že rozhodnutie vydáva konkrétna organizačná zložka, môžete uviesť jej
-							úplný a presný názov. </span>
+		že rozhodnutie vydáva konkrétna organizačná zložka, môžete uviesť jej
+																						úplný
+		a presný názov. </span>
 																					<span
 																						class="s_D3FCB7B8"></span>
 																				</p>
@@ -2203,7 +2207,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'Ico']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'Ico']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2215,23 +2219,24 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																			<p>
 																				<style
 																					type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					body {
-							font-family: 'Verdana';font-size: 16px; }
+		font-family: 'Verdana';font-size: 16px; }
 																					.p_6AAD5060 {
-							margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					.s_A8B3B40B {
-							font-family: 'Arial';font-size: 14.67px; }
+		font-family: 'Arial';font-size: 14.67px; }
 																					.s_489786FB {
-							font-family: 'Times New Roman';font-size: 16px; } </style>
+		font-family: 'Times New Roman';font-size: 16px; } </style>
 																				<p
 																					class="p_6AAD5060">
 																					<span
 																						class="s_A8B3B40B">Uveďte
-							identifikátor v zmysle zákona č. 272/2015 Z. z. o registri právnických
-							osôb, podnikateľov a
+		identifikátor v zmysle zákona č. 272/2015 Z. z. o registri právnických
+																						osôb,
+		podnikateľov a
 																						orgánov
-							verejnej moci.  Uveďte v tvare bez medzier. </span>
+		verejnej moci.  Uveďte v tvare bez medzier. </span>
 																					<span
 																						class="s_489786FB"></span>
 																				</p>
@@ -2247,7 +2252,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																<label class="fieldLabel" title=""
 																	for="IdentifierTypeCodelistCode"
 																	style="display: none">
-							IdentifierTypeCodelistCode </label>
+		IdentifierTypeCodelistCode </label>
 																<span class="fieldContent"
 																	style="display: none">
 																	<input
@@ -2261,7 +2266,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'IdentifierTypeCodelistCode']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'IdentifierTypeCodelistCode']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2276,7 +2281,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																<label class="fieldLabel" title=""
 																	for="IdentifierTypeItemCode"
 																	style="display: none">
-							IdentifierTypeItemCode </label>
+		IdentifierTypeItemCode </label>
 																<span class="fieldContent"
 																	style="display: none">
 																	<input
@@ -2290,7 +2295,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'IdentifierTypeItemCode']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'IdentifierTypeItemCode']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2305,7 +2310,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																<label class="fieldLabel" title=""
 																	for="IdentifierTypeItemName"
 																	style="display: none">
-							IdentifierTypeItemName </label>
+		IdentifierTypeItemName </label>
 																<span class="fieldContent"
 																	style="display: none">
 																	<input
@@ -2319,7 +2324,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'IdentifierTypeItemName']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'IdentifierTypeItemName']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2352,7 +2357,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'Suffix']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'Suffix']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2364,28 +2369,33 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																			<p>
 																				<style
 																					type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					body {
-							font-family: 'Verdana';font-size: 16px; }
+		font-family: 'Verdana';font-size: 16px; }
 																					.p_6AAD5060 {
-							margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					.s_A8B3B40B {
-							font-family: 'Arial';font-size: 14.67px; }
+		font-family: 'Arial';font-size: 14.67px; }
 																					.s_D3FCB7B8 {
-							font-family: 'Verdana';font-size: 16px; } </style>
+		font-family: 'Verdana';font-size: 16px; } </style>
 																				<p
 																					class="p_6AAD5060">
 																					<span
 																						class="s_A8B3B40B">Uveďte
-							päťmiestne alebo štvormiestne číslo. Súčasť identifikátora elektronickej
-							schránky subjektu v
+		päťmiestne alebo štvormiestne číslo. Súčasť identifikátora elektronickej
+																						schránky
+		subjektu v
 																						konkrétnom
-							právnom postavení, ak bol pri zriadení schránky pridelený. Uvádza sa iba
-							v prípade, ak má subjekt pre jeden identifikátor osoby (IČO) zriadených
-							viacero
-																						elektronických
-							schránok v rôznych právnych postaveniach alebo ak sa jedná o nezapísanú
-							organizačnú zložku orgánu verejnej moci. </span>
+		právnom postavení, ak bol pri zriadení schránky pridelený. Uvádza sa iba
+																						v prípade,
+																						ak
+		má subjekt pre jeden identifikátor osoby (IČO) zriadených
+																						viacero
+		elektronických
+																						schránok
+		v rôznych právnych postaveniach alebo ak sa jedná o nezapísanú
+																						organizačnú
+		zložku orgánu verejnej moci. </span>
 																					<span
 																						class="s_D3FCB7B8"></span>
 																				</p>
@@ -2442,7 +2452,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'SenderStreetName']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'SenderStreetName']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2454,21 +2464,22 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																			<p>
 																				<style
 																					type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					body {
-							font-family: 'Verdana';font-size: 16px; }
+		font-family: 'Verdana';font-size: 16px; }
 																					.p_6AAD5060 {
-							margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					.s_C1A2E899 {
-							font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
-							.s_D3FCB7B8 {
-																					font-family:
-							'Verdana';font-size: 16px; } </style>
+		font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
+																					.s_D3FCB7B8 {
+		font-family:
+																					'Verdana';font-size:
+		16px; } </style>
 																				<p
 																					class="p_6AAD5060">
 																					<span
 																						class="s_C1A2E899">Uveďte
-							názov ulice, kde orgán, ktorý rozhodnutie vydáva, sídli. </span>
+		názov ulice, kde orgán, ktorý rozhodnutie vydáva, sídli. </span>
 																					<span
 																						class="s_D3FCB7B8"></span>
 																				</p>
@@ -2504,7 +2515,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'SenderPropertyRegistrationNumber']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'SenderPropertyRegistrationNumber']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2516,28 +2527,29 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																			<p>
 																				<style
 																					type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					body {
-							font-family: 'Verdana';font-size: 16px; }
+		font-family: 'Verdana';font-size: 16px; }
 																					.p_6AAD5060 {
-							margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					.s_C1A2E899 {
-							font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
-							.s_A73DE0BF {
-																					font-family:
-							'Arial';font-size: 14.6666666666667px; }
+		font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
+																					.s_A73DE0BF {
+		font-family:
+																					'Arial';font-size:
+		14.6666666666667px; }
 																					.s_D3FCB7B8 {
-							font-family: 'Verdana';font-size: 16px; } </style>
+		font-family: 'Verdana';font-size: 16px; } </style>
 																				<p
 																					class="p_6AAD5060">
 																					<span
 																						class="s_C1A2E899">Môžete
-							uviesť</span>
+		uviesť</span>
 																					<span
 																						class="s_A73DE0BF"> </span>
 																					<span
 																						class="s_C1A2E899">unikátne
-							číslo pridelené budove v rámci katastrálneho územia. </span>
+		číslo pridelené budove v rámci katastrálneho územia. </span>
 																					<span
 																						class="s_D3FCB7B8"></span>
 																				</p>
@@ -2572,7 +2584,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'SenderBuildingNumber']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'SenderBuildingNumber']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2584,20 +2596,20 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																			<p>
 																				<style
 																					type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					body {
-							font-family: 'Verdana';font-size: 16px; }
+		font-family: 'Verdana';font-size: 16px; }
 																					.p_6AAD5060 {
-							margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					.s_A4F101E {
-							font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																					.s_A0B393FA {
-							font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																				<p
 																					class="p_6AAD5060">
 																					<span
 																						class="s_A4F101E">Uveďte
-							unikátne číslo pridelené budove v rámci ulice. </span>
+		unikátne číslo pridelené budove v rámci ulice. </span>
 																					<span
 																						class="s_A0B393FA"></span>
 																				</p>
@@ -2654,7 +2666,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'SenderPostalCode']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'SenderPostalCode']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2666,21 +2678,22 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																			<p>
 																				<style
 																					type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					body {
-							font-family: 'Verdana';font-size: 16px; }
+		font-family: 'Verdana';font-size: 16px; }
 																					.p_6AAD5060 {
-							margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					.s_C1A2E899 {
-							font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
-							.s_D3FCB7B8 {
-																					font-family:
-							'Verdana';font-size: 16px; } </style>
+		font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
+																					.s_D3FCB7B8 {
+		font-family:
+																					'Verdana';font-size:
+		16px; } </style>
 																				<p
 																					class="p_6AAD5060">
 																					<span
 																						class="s_C1A2E899">Uveďte
-							poštové smerovacie číslo obce/mesta bez medzier. </span>
+		poštové smerovacie číslo obce/mesta bez medzier. </span>
 																					<span
 																						class="s_D3FCB7B8"></span>
 																				</p>
@@ -2717,7 +2730,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'SenderMunicipalityNonCodelistData']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'SenderMunicipalityNonCodelistData']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2729,20 +2742,20 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																			<p>
 																				<style
 																					type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					body {
-							font-family: 'Verdana';font-size: 16px; }
+		font-family: 'Verdana';font-size: 16px; }
 																					.p_6AAD5060 {
-							margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					.s_A4F101E {
-							font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																					.s_A0B393FA {
-							font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																				<p
 																					class="p_6AAD5060">
 																					<span
 																						class="s_A4F101E">Uveďte
-							názov obce/mesta. </span>
+		názov obce/mesta. </span>
 																					<span
 																						class="s_A0B393FA"></span>
 																				</p>
@@ -2758,7 +2771,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																<label class="fieldLabel" title=""
 																	for="SenderMunicipalityCodeList"
 																	style="display: none">
-							SenderMunicipalityCodeList </label>
+		SenderMunicipalityCodeList </label>
 																<span class="fieldContent"
 																	style="display: none">
 																	<input
@@ -2772,7 +2785,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'SenderMunicipalityCodeList']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'SenderMunicipalityCodeList']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2787,7 +2800,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																<label class="fieldLabel" title=""
 																	for="SenderMunicipalityItemCode"
 																	style="display: none">
-							SenderMunicipalityItemCode </label>
+		SenderMunicipalityItemCode </label>
 																<span class="fieldContent"
 																	style="display: none">
 																	<input
@@ -2801,7 +2814,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'SenderMunicipalityItemCode']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'SenderMunicipalityItemCode']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2816,7 +2829,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																<label class="fieldLabel" title=""
 																	for="SenderMunicipalityItemName"
 																	style="display: none">
-							SenderMunicipalityItemName </label>
+		SenderMunicipalityItemName </label>
 																<span class="fieldContent"
 																	style="display: none">
 																	<input
@@ -2830,7 +2843,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'SenderMunicipalityItemName']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'SenderMunicipalityItemName']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -2918,19 +2931,19 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 														<p>
 															<style type="text/css">
 																p { margin-top: 0px;margin-bottom:
-							12px;line-height: 1.15; }
+		12px;line-height: 1.15; }
 																body { font-family:
-							'Verdana';font-size: 16px; }
+		'Verdana';font-size: 16px; }
 																.p_6AAD5060 { margin-top:
-							0px;margin-bottom: 12px;line-height: 1.15; }
+		0px;margin-bottom: 12px;line-height: 1.15; }
 																.s_A4F101E { font-family:
-							'Arial';font-size: 14.67px;color: #00B050; }
+		'Arial';font-size: 14.67px;color: #00B050; }
 																.s_A0B393FA { font-family: 'Times
 																New Roman';font-size: 16px;color:
-							#00B050; } </style>
+		#00B050; } </style>
 															<p class="p_6AAD5060">
 																<span class="s_A4F101E">Uveďte
-							identifikačné číslo spisu, konania alebo inú registratúrnu značku. </span>
+		identifikačné číslo spisu, konania alebo inú registratúrnu značku. </span>
 																<span class="s_A0B393FA"></span>
 															</p>
 														</p>
@@ -2981,19 +2994,19 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 														<p>
 															<style type="text/css">
 																p { margin-top: 0px;margin-bottom:
-							12px;line-height: 1.15; }
+		12px;line-height: 1.15; }
 																body { font-family:
-							'Verdana';font-size: 16px; }
+		'Verdana';font-size: 16px; }
 																.p_6AAD5060 { margin-top:
-							0px;margin-bottom: 12px;line-height: 1.15; }
+		0px;margin-bottom: 12px;line-height: 1.15; }
 																.s_C1A2E899 { font-family:
-							'Arial';font-size: 14.6666666666667px;color: #00B050; }
+		'Arial';font-size: 14.6666666666667px;color: #00B050; }
 																.s_D3FCB7B8 { font-family:
-							'Verdana';font-size: 16px; } </style>
+		'Verdana';font-size: 16px; } </style>
 															<p class="p_6AAD5060">
 																<span class="s_C1A2E899">Uveďte
 																	názov obce/mesta vydania
-							rozhodnutia. </span>
+		rozhodnutia. </span>
 																<span class="s_D3FCB7B8"></span>
 															</p>
 														</p>
@@ -3028,19 +3041,19 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 														<p>
 															<style type="text/css">
 																p { margin-top: 0px;margin-bottom:
-							12px;line-height: 1.15; }
+		12px;line-height: 1.15; }
 																body { font-family:
-							'Verdana';font-size: 16px; }
+		'Verdana';font-size: 16px; }
 																.p_6AAD5060 { margin-top:
-							0px;margin-bottom: 12px;line-height: 1.15; }
+		0px;margin-bottom: 12px;line-height: 1.15; }
 																.s_A4F101E { font-family:
-							'Arial';font-size: 14.67px;color: #00B050; }
+		'Arial';font-size: 14.67px;color: #00B050; }
 																.s_A0B393FA { font-family: 'Times
 																New Roman';font-size: 16px;color:
-							#00B050; } </style>
+		#00B050; } </style>
 															<p class="p_6AAD5060">
 																<span class="s_A4F101E">Z kalendára
-							vyberte deň, mesiac a rok vydania rozhodnutia. </span>
+		vyberte deň, mesiac a rok vydania rozhodnutia. </span>
 																<span class="s_A0B393FA"></span>
 															</p>
 														</p>
@@ -3150,18 +3163,18 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 														<p>
 															<style type="text/css">
 																p { margin-top: 0px;margin-bottom:
-							12px;line-height: 1.15; }
+		12px;line-height: 1.15; }
 																body { font-family:
-							'Verdana';font-size: 16px; }
+		'Verdana';font-size: 16px; }
 																.p_6AAD5060 { margin-top:
-							0px;margin-bottom: 12px;line-height: 1.15; }
+		0px;margin-bottom: 12px;line-height: 1.15; }
 																.s_A4F101E { font-family:
-							'Arial';font-size: 14.67px;color: #00B050; }
+		'Arial';font-size: 14.67px;color: #00B050; }
 																.s_D3FCB7B8 { font-family:
-							'Verdana';font-size: 16px; } </style>
+		'Verdana';font-size: 16px; } </style>
 															<p class="p_6AAD5060">
 																<span class="s_A4F101E">Vpíšte úplné
-							a presné znenie veľkými písmenami, napríklad ROZHODNUTIE alebo ROZKAZ. </span>
+		a presné znenie veľkými písmenami, napríklad ROZHODNUTIE alebo ROZKAZ. </span>
 																<span class="s_D3FCB7B8"></span>
 															</p>
 														</p>
@@ -3194,22 +3207,22 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 														<p>
 															<style type="text/css">
 																p { margin-top: 0px;margin-bottom:
-							12px;line-height: 1.15; }
+		12px;line-height: 1.15; }
 																body { font-family:
-							'Verdana';font-size: 16px; }
+		'Verdana';font-size: 16px; }
 																.p_6AAD5060 { margin-top:
-							0px;margin-bottom: 12px;line-height: 1.15; }
+		0px;margin-bottom: 12px;line-height: 1.15; }
 																.s_A4F101E { font-family:
-							'Arial';font-size: 14.67px;color: #00B050; }
+		'Arial';font-size: 14.67px;color: #00B050; }
 																.s_A0B393FA { font-family: 'Times
 																New Roman';font-size: 16px;color:
-							#00B050; } </style>
+		#00B050; } </style>
 															<p class="p_6AAD5060">
 																<span class="s_A4F101E">Vpíšte úplný
-							a presný názov rozhodnutia v zmysle osobitných právnych predpisov, na
-							základe ktorých
+		a presný názov rozhodnutia v zmysle osobitných právnych predpisov, na
+																	základe ktorých
 																	príslušný orgán pri vydaní
-							rozhodnutia postupoval. </span>
+		rozhodnutia postupoval. </span>
 																<span class="s_A0B393FA"></span>
 															</p>
 														</p>
@@ -3270,7 +3283,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 
 											<label class="fieldLabel" title=""
 												for="UcastniciKonania" style="display: none">Popis
-							konania / Účastníci konania </label>
+		konania / Účastníci konania </label>
 											<span class="fieldContent">
 												<textarea id="UcastniciKonania"
 													name="UcastniciKonania" title=""
@@ -3292,21 +3305,21 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 														<p>
 															<style type="text/css">
 																p { margin-top: 0px;margin-bottom:
-							12px;line-height: 1.15; }
+		12px;line-height: 1.15; }
 																body { font-family:
-							'Verdana';font-size: 16px; }
+		'Verdana';font-size: 16px; }
 																.p_6AAD5060 { margin-top:
-							0px;margin-bottom: 12px;line-height: 1.15; }
+		0px;margin-bottom: 12px;line-height: 1.15; }
 																.s_C1A2E899 { font-family:
-							'Arial';font-size: 14.6666666666667px;color: #00B050; }
+		'Arial';font-size: 14.6666666666667px;color: #00B050; }
 																.s_D3FCB7B8 { font-family:
-							'Verdana';font-size: 16px; } </style>
+		'Verdana';font-size: 16px; } </style>
 															<p class="p_6AAD5060">
 																<span class="s_C1A2E899">Uveďte
-							identifikačné údaje všetkých účastníkov konania (napr. meno, priezvisko,
-							dátum narodenia,
+		identifikačné údaje všetkých účastníkov konania (napr. meno, priezvisko,
+																	dátum narodenia,
 																	rodné číslo, adresu trvalého
-							pobytu a pod.) a stručne popíšte samotné konanie, aby bolo
+		pobytu a pod.) a stručne popíšte samotné konanie, aby bolo
 																	zrejmé, v akej veci sa vydáva. </span>
 																<span class="s_D3FCB7B8"></span>
 															</p>
@@ -3389,22 +3402,22 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 														<p>
 															<style type="text/css">
 																p { margin-top: 0px;margin-bottom:
-							12px;line-height: 1.15; }
+		12px;line-height: 1.15; }
 																body { font-family:
-							'Verdana';font-size: 16px; }
+		'Verdana';font-size: 16px; }
 																.p_6AAD5060 { margin-top:
-							0px;margin-bottom: 12px;line-height: 1.15; }
+		0px;margin-bottom: 12px;line-height: 1.15; }
 																.s_A4F101E { font-family:
-							'Arial';font-size: 14.67px;color: #00B050; }
+		'Arial';font-size: 14.67px;color: #00B050; }
 																.s_A0B393FA { font-family: 'Times
 																New Roman';font-size: 16px;color:
-							#00B050; } </style>
+		#00B050; } </style>
 															<p class="p_6AAD5060">
 																<span class="s_A4F101E">Uveďte text
-							výroku rozhodnutia vo veci samej, z ktorého budú zrejmé priznané
-							oprávnenia, povinnosti,
-																	aplikované právne ustanovenia,
-							lehota na plnenie a pod. </span>
+		výroku rozhodnutia vo veci samej, z ktorého budú zrejmé priznané
+																	oprávnenia, povinnosti,
+		aplikované právne ustanovenia,
+																	lehota na plnenie a pod. </span>
 																<span class="s_A0B393FA"></span>
 															</p>
 														</p>
@@ -3484,22 +3497,22 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 														<p>
 															<style type="text/css">
 																p { margin-top: 0px;margin-bottom:
-							12px;line-height: 1.15; }
+		12px;line-height: 1.15; }
 																body { font-family:
-							'Verdana';font-size: 16px; }
+		'Verdana';font-size: 16px; }
 																.p_6AAD5060 { margin-top:
-							0px;margin-bottom: 12px;line-height: 1.15; }
+		0px;margin-bottom: 12px;line-height: 1.15; }
 																.s_A4F101E { font-family:
-							'Arial';font-size: 14.67px;color: #00B050; }
+		'Arial';font-size: 14.67px;color: #00B050; }
 																.s_A0B393FA { font-family: 'Times
 																New Roman';font-size: 16px;color:
-							#00B050; } </style>
+		#00B050; } </style>
 															<p class="p_6AAD5060">
 																<span class="s_A4F101E">Uveďte text
-							odôvodnenia výroku rozhodnutia, ktorý zhodnotí skutkový stav, vyjadrenia
-							účastníkov konania,
+		odôvodnenia výroku rozhodnutia, ktorý zhodnotí skutkový stav, vyjadrenia
+																	účastníkov konania,
 																	zhrnie dokazovanie, zdôvodní
-							posúdenie právneho stavu veci a pod.). </span>
+		posúdenie právneho stavu veci a pod.). </span>
 																<span class="s_A0B393FA"></span>
 															</p>
 														</p>
@@ -3574,22 +3587,23 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 														<p>
 															<style type="text/css">
 																p { margin-top: 0px;margin-bottom:
-							12px;line-height: 1.15; }
+		12px;line-height: 1.15; }
 																body { font-family:
-							'Verdana';font-size: 16px; }
+		'Verdana';font-size: 16px; }
 																.p_6AAD5060 { margin-top:
-							0px;margin-bottom: 12px;line-height: 1.15; }
+		0px;margin-bottom: 12px;line-height: 1.15; }
 																.s_A4F101E { font-family:
-							'Arial';font-size: 14.67px;color: #00B050; }
+		'Arial';font-size: 14.67px;color: #00B050; }
 																.s_A0B393FA { font-family: 'Times
 																New Roman';font-size: 16px;color:
-							#00B050; } </style>
+		#00B050; } </style>
 															<p class="p_6AAD5060">
 																<span class="s_A4F101E">Zadajte text
-							poučenia rozhodnutia, ktorý bude obsahovať informáciu o prípustnosti
-							alebo neprípustnosti
+		poučenia rozhodnutia, ktorý bude obsahovať informáciu o prípustnosti
+																	alebo neprípustnosti
 																	podať opravný prostriedok,
-							v akej lehote, akému orgánu a pod.. </span>
+																	v akej lehote, akému orgánu
+		a pod.. </span>
 																<span class="s_A0B393FA"></span>
 															</p>
 														</p>
@@ -3612,7 +3626,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 						<xsl:if test="normalize-space(/egonp:Dokument/egonp:SecPoucenie) = ''">
 							<xsl:if test="/egonp:Dokument/egonp:SecPoucenie/@notInFormData">
 								<script type="text/javascript">$(document).ready(function () {
-							initRepetitionSection(0, 1, 'layoutRow5045') })</script>
+		initRepetitionSection(0, 1, 'layoutRow5045') })</script>
 							</xsl:if>
 						</xsl:if>
 						<xsl:for-each select="/egonp:Dokument/egonp:SecEmptySection2">
@@ -3685,7 +3699,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'AttachmentVal']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'AttachmentVal']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -3697,22 +3711,23 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																			<p>
 																				<style
 																					type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					body {
-							font-family: 'Verdana';font-size: 16px; }
+		font-family: 'Verdana';font-size: 16px; }
 																					.p_6AAD5060 {
-							margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					.s_C1A2E899 {
-							font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
-							.s_D3FCB7B8 {
-																					font-family:
-							'Verdana';font-size: 16px; } </style>
+		font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
+																					.s_D3FCB7B8 {
+		font-family:
+																					'Verdana';font-size:
+		16px; } </style>
 																				<p
 																					class="p_6AAD5060">
 																					<span
 																						class="s_C1A2E899">Môžete
-							vpísať číselný údaj predstavujúci počet priložených dokumentov, príklad:
-							2 prílohy. </span>
+		vpísať číselný údaj predstavujúci počet priložených dokumentov, príklad:
+																						2 prílohy. </span>
 																					<span
 																						class="s_D3FCB7B8"></span>
 																				</p>
@@ -3758,19 +3773,19 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 														<p>
 															<style type="text/css">
 																p { margin-top: 0px;margin-bottom:
-							12px;line-height: 1.15; }
+		12px;line-height: 1.15; }
 																body { font-family:
-							'Verdana';font-size: 16px; }
+		'Verdana';font-size: 16px; }
 																.p_6AAD5060 { margin-top:
-							0px;margin-bottom: 12px;line-height: 1.15; }
+		0px;margin-bottom: 12px;line-height: 1.15; }
 																.s_A4F101E { font-family:
-							'Arial';font-size: 14.67px;color: #00B050; }
+		'Arial';font-size: 14.67px;color: #00B050; }
 																.s_A0B393FA { font-family: 'Times
 																New Roman';font-size: 16px;color:
-							#00B050; } </style>
+		#00B050; } </style>
 															<p class="p_6AAD5060">
 																<span class="s_A4F101E">Môžete zadať
-							úplné a presné názvy priložených dokumentov, príklad: Diplom, Životopis. </span>
+		úplné a presné názvy priložených dokumentov, príklad: Diplom, Životopis. </span>
 																<span class="s_A0B393FA"></span>
 															</p>
 														</p>
@@ -3793,7 +3808,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 						<xsl:if test="normalize-space(/egonp:Dokument/egonp:SecAttachment) = ''">
 							<xsl:if test="/egonp:Dokument/egonp:SecAttachment/@notInFormData">
 								<script type="text/javascript">$(document).ready(function () {
-							initRepetitionSection(0, 1, 'layoutRow5037') })</script>
+		initRepetitionSection(0, 1, 'layoutRow5037') })</script>
 							</xsl:if>
 						</xsl:if>
 						<xsl:for-each select="/egonp:Dokument/egonp:SecEmptySection5">
@@ -3862,7 +3877,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 															test="position() > 1"><xsl:text>_Repeating_</xsl:text><xsl:value-of
 																select="position()-1" /></xsl:if></xsl:attribute>
 													<xsl:attribute name="class">layoutRow ui-tabs
-							ui-widget-content bezOkrajaBezPozadiaHlavicky nocaption <xsl:if
+		ui-widget-content bezOkrajaBezPozadiaHlavicky nocaption <xsl:if
 															test="position() > 1"><xsl:text> repeatingSection</xsl:text></xsl:if></xsl:attribute>
 													<input type="hidden" name="CreatorPerson" />
 													<div id="layoutRowContentlayoutRow5064"
@@ -3901,7 +3916,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'CreatorPersonName']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'CreatorPersonName']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -3913,20 +3928,20 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																			<p>
 																				<style
 																					type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					body {
-							font-family: 'Verdana';font-size: 16px; }
+		font-family: 'Verdana';font-size: 16px; }
 																					.p_6AAD5060 {
-							margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					.s_A4F101E {
-							font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																					.s_A0B393FA {
-							font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																				<p
 																					class="p_6AAD5060">
 																					<span
 																						class="s_A4F101E">Uveďte
-							meno a priezvisko osoby oprávnenej rozhodnutie podpísať alebo zapečatiť. </span>
+		meno a priezvisko osoby oprávnenej rozhodnutie podpísať alebo zapečatiť. </span>
 																					<span
 																						class="s_A0B393FA"></span>
 																				</p>
@@ -3957,7 +3972,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																		<xsl:if
 																			test="boolean(./*[name() = 'Position']/@isReadOnly = 'true')"><xsl:attribute
 																				name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																		<xsl:if
 																			test="./*[name() = 'Position']"><xsl:attribute
 																				name="value"><xsl:value-of
@@ -3969,23 +3984,24 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																			<p>
 																				<style
 																					type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					body {
-							font-family: 'Verdana';font-size: 16px; }
+		font-family: 'Verdana';font-size: 16px; }
 																					.p_6AAD5060 {
-							margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																					.s_A4F101E {
-							font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																					.s_A0B393FA {
-							font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																				<p
 																					class="p_6AAD5060">
 																					<span
 																						class="s_A4F101E">Uveďte
-							pracovné zaradenie osoby oprávnenej rozhodnutie podpísať alebo
-							zapečatiť, príklad: riaditeľ
+		pracovné zaradenie osoby oprávnenej rozhodnutie podpísať alebo
+																						zapečatiť,
+		príklad: riaditeľ
 																						odboru
-							verejného obstarávania. </span>
+		verejného obstarávania. </span>
 																					<span
 																						class="s_A0B393FA"></span>
 																				</p>
@@ -4021,7 +4037,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 												test="normalize-space(./egonp:CreatorPerson) = ''">
 												<xsl:if test="./egonp:CreatorPerson/@notInFormData">
 													<script type="text/javascript">$(document).ready(function
-							() { initRepetitionSection(1, 99, 'layoutRow5064') })</script>
+		() { initRepetitionSection(1, 99, 'layoutRow5064') })</script>
 												</xsl:if>
 											</xsl:if>
 
@@ -4084,7 +4100,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 															test="position() > 1"><xsl:text>_Repeating_</xsl:text><xsl:value-of
 																select="position()-1" /></xsl:if></xsl:attribute>
 													<xsl:attribute name="class">layoutRow ui-tabs
-							ui-widget-content dolava8px PozadieLightRed nocaption <xsl:if
+		ui-widget-content dolava8px PozadieLightRed nocaption <xsl:if
 															test="position() > 1"><xsl:text> repeatingSection</xsl:text></xsl:if></xsl:attribute>
 													<input type="hidden" name="Recipient" />
 													<div id="layoutRowContentlayoutRow5025"
@@ -4130,20 +4146,20 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																				disabled="disabled">
 																				<xsl:attribute
 																					name="name">
-							SubjectTypeFOPO</xsl:attribute>
+		SubjectTypeFOPO</xsl:attribute>
 																				<xsl:if
 																					test="boolean(./*[name() = 'SubjectTypeFOPO']/@isReadOnly = 'true')"><xsl:attribute
 																						name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																				<xsl:if
 																					test="./*[name() = 'SubjectTypeFOPO']='Fyzick&#225; osoba'"><xsl:attribute
 																						name="checked">
-							checked</xsl:attribute></xsl:if>
+		checked</xsl:attribute></xsl:if>
 																			</input>
 																			<label
 																				for="SubjectTypeFOPO"
 																				class="optionLabel">Fyzická
-							osoba</label>
+		osoba</label>
 																		</span>
 																		<span>
 																			<input
@@ -4157,20 +4173,20 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																				disabled="disabled">
 																				<xsl:attribute
 																					name="name">
-							SubjectTypeFOPO</xsl:attribute>
+		SubjectTypeFOPO</xsl:attribute>
 																				<xsl:if
 																					test="boolean(./*[name() = 'SubjectTypeFOPO']/@isReadOnly = 'true')"><xsl:attribute
 																						name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																				<xsl:if
 																					test="./*[name() = 'SubjectTypeFOPO']='Pr&#225;vnick&#225; osoba'"><xsl:attribute
 																						name="checked">
-							checked</xsl:attribute></xsl:if>
+		checked</xsl:attribute></xsl:if>
 																			</input>
 																			<label
 																				for="SubjectTypeFOPOPostfixList1"
 																				class="optionLabel">Právnická
-							osoba</label>
+		osoba</label>
 																		</span>
 																	</div>
 																</fieldset>
@@ -4225,7 +4241,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientAfixPrefixCodelistCode"
 																											style="display: none">
-							RecipientAfixPrefixCodelistCode </label>
+		RecipientAfixPrefixCodelistCode </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -4244,7 +4260,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientAfixPrefixCodelistCode']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientAfixPrefixCodelistCode']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -4280,7 +4296,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientAfixPrefixItemName']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientAfixPrefixItemName']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -4291,18 +4307,18 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												style="display: none;">
 																												<span
 																													class="lookupComponentId">
-							RecipientAfixPrefixItemName</span>
+		RecipientAfixPrefixItemName</span>
 																												<span
 																													class="fieldId">
-							RecipientAfixPrefixItemCode</span>
+		RecipientAfixPrefixItemCode</span>
 																												<span
 																													class="remoteSourceIdentifier"></span>
 																												<span
 																													class="remoteLookupCode">
-							SUSR_0062</span>
+		SUSR_0062</span>
 																												<span
 																													class="fieldId">
-							ServiceID</span>
+		ServiceID</span>
 																											</span>
 																											<div
 																												class="info">
@@ -4312,24 +4328,27 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A4F101E
-							{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
-																																class="s_A4F101E">Zvoľte
-							„Vybrať“, vpíšte konkrétny titul udelený adresátovi pred menom (príklad:
-							Bc., Mgr., Ing.,
+																																class="s_A4F101E">
+		Zvoľte
+																																„Vybrať“,
+		vpíšte konkrétny titul udelený adresátovi pred menom (príklad:
+																																Bc.,
+		Mgr., Ing.,
 																																MUDr.,
-							JUDr.), kliknite na „Hľadať“, vyberte hodnotu z číselníka a prejdite na
-							„OK“. </span>
+		JUDr.), kliknite na „Hľadať“, vyberte hodnotu z číselníka a prejdite na
+																																„OK“. </span>
 																															<span
 																																class="s_A0B393FA"></span>
 																														</p>
@@ -4348,28 +4367,28 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													style="display: none;">
 																													<span
 																														class="lookupComponentId">
-							RecipientAfixPrefixItemName</span>
+		RecipientAfixPrefixItemName</span>
 																													<span
 																														class="fieldId">
-							RecipientAfixPrefixItemCode</span>
+		RecipientAfixPrefixItemCode</span>
 																													<span
 																														class="remoteSourceIdentifier"></span>
 																													<span
 																														class="remoteLookupCode">
-							SUSR_0062</span>
+		SUSR_0062</span>
 																													<span
 																														class="fieldId">
-							ServiceID</span>
+		ServiceID</span>
 																												</span>
 																												<div
 																													class="tableFilter">
-							Zadajte text: <input class="tableFilterText ui-corner-all" type="text" />
+		Zadajte text: <input class="tableFilterText ui-corner-all" type="text" />
 <input
 																														class="FilterButton ui-button ui-widget ui-state-default ui-corner-all"
 																														type="button"
 																														value="Hľadať"
 																														alt="Hľadať" />
-							Ignorovať diakritiku a veľké písmená <input
+		Ignorovať diakritiku a veľké písmená <input
 																														class="tableFilterIgnoreCaseSensitive"
 																														type="checkbox"
 																														title="Ignorovať diakritiku a veľké písmená" />
@@ -4382,9 +4401,9 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<thead>
 																														<tr>
 																															<th>
-							Kód</th>
+		Kód</th>
 																															<th>
-							Hodnota</th>
+		Hodnota</th>
 																														</tr>
 																													</thead>
 																													<tbody>
@@ -4410,7 +4429,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientAfixPrefixItemCode"
 																											style="display: none">Titul
-							pred ItemCode </label>
+		pred ItemCode </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -4428,7 +4447,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientAfixPrefixItemCode']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientAfixPrefixItemCode']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -4457,7 +4476,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											<xsl:text
 																												disable-output-escaping="yes">Meno </xsl:text>
 																											<em>
-							*</em>
+		*</em>
 																										</label>
 																										<span
 																											class="fieldContent">
@@ -4475,7 +4494,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientGivenName']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientGivenName']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -4489,20 +4508,20 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A4F101E
-							{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_A4F101E">Uveďte
-							krstné meno adresáta. </span>
+		krstné meno adresáta. </span>
 																															<span
 																																class="s_A0B393FA"></span>
 																														</p>
@@ -4532,7 +4551,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											<xsl:text
 																												disable-output-escaping="yes">Priezvisko </xsl:text>
 																											<em>
-							*</em>
+		*</em>
 																										</label>
 																										<span
 																											class="fieldContent">
@@ -4550,7 +4569,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientFamilyName']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientFamilyName']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -4564,20 +4583,20 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A4F101E
-							{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_A4F101E">Uveďte
-							priezvisko adresáta. </span>
+		priezvisko adresáta. </span>
 																															<span
 																																class="s_A0B393FA"></span>
 																														</p>
@@ -4605,7 +4624,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientAfixPostfixCodelistCode"
 																											style="display: none">
-							RecipientAfixPostfixCodelistCode </label>
+		RecipientAfixPostfixCodelistCode </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -4624,7 +4643,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientAfixPostfixCodelistCode']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientAfixPostfixCodelistCode']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -4660,7 +4679,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientAfixPostfixItemName']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientAfixPostfixItemName']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -4671,18 +4690,18 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												style="display: none;">
 																												<span
 																													class="lookupComponentId">
-							RecipientAfixPostfixItemName</span>
+		RecipientAfixPostfixItemName</span>
 																												<span
 																													class="fieldId">
-							RecipientAfixPostfixItemCode</span>
+		RecipientAfixPostfixItemCode</span>
 																												<span
 																													class="remoteSourceIdentifier"></span>
 																												<span
 																													class="remoteLookupCode">
-							SUSR_0063</span>
+		SUSR_0063</span>
 																												<span
 																													class="fieldId">
-							ServiceID</span>
+		ServiceID</span>
 																											</span>
 																											<div
 																												class="info">
@@ -4692,23 +4711,24 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A4F101E
-							{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_A4F101E">Zvoľte
-							„Vybrať“, vpíšte konkrétny titul uvedený adresátovi za priezviskom
-							(príklad: PhD., CSc.,
+		„Vybrať“, vpíšte konkrétny titul uvedený adresátovi za priezviskom
+																																(príklad:
+		PhD., CSc.,
 																																DrSc.),
-							kliknite na „Hľadať“, vyberte hodnotu z číselníka a prejdite na „OK“. </span>
+		kliknite na „Hľadať“, vyberte hodnotu z číselníka a prejdite na „OK“. </span>
 																															<span
 																																class="s_A0B393FA"></span>
 																														</p>
@@ -4727,28 +4747,28 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													style="display: none;">
 																													<span
 																														class="lookupComponentId">
-							RecipientAfixPostfixItemName</span>
+		RecipientAfixPostfixItemName</span>
 																													<span
 																														class="fieldId">
-							RecipientAfixPostfixItemCode</span>
+		RecipientAfixPostfixItemCode</span>
 																													<span
 																														class="remoteSourceIdentifier"></span>
 																													<span
 																														class="remoteLookupCode">
-							SUSR_0063</span>
+		SUSR_0063</span>
 																													<span
 																														class="fieldId">
-							ServiceID</span>
+		ServiceID</span>
 																												</span>
 																												<div
 																													class="tableFilter">
-							Zadajte text: <input class="tableFilterText ui-corner-all" type="text" />
+		Zadajte text: <input class="tableFilterText ui-corner-all" type="text" />
 <input
 																														class="FilterButton ui-button ui-widget ui-state-default ui-corner-all"
 																														type="button"
 																														value="Hľadať"
 																														alt="Hľadať" />
-							Ignorovať diakritiku a veľké písmená <input
+		Ignorovať diakritiku a veľké písmená <input
 																														class="tableFilterIgnoreCaseSensitive"
 																														type="checkbox"
 																														title="Ignorovať diakritiku a veľké písmená" />
@@ -4761,9 +4781,9 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<thead>
 																														<tr>
 																															<th>
-							Kód</th>
+		Kód</th>
 																															<th>
-							Hodnota</th>
+		Hodnota</th>
 																														</tr>
 																													</thead>
 																													<tbody>
@@ -4789,7 +4809,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientAfixPostfixItemCode"
 																											style="display: none">Titul
-							za ItemCode </label>
+		za ItemCode </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -4807,7 +4827,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientAfixPostfixItemCode']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientAfixPostfixItemCode']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -4863,7 +4883,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											<xsl:text
 																												disable-output-escaping="yes">Ulica </xsl:text>
 																											<em>
-							*</em>
+		*</em>
 																										</label>
 																										<span
 																											class="fieldContent">
@@ -4881,7 +4901,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientStreetName']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientStreetName']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -4895,20 +4915,20 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A4F101E
-							{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_A4F101E">Uveďte
-							názov ulice, kde má adresát trvalý/prechodný pobyt. </span>
+		názov ulice, kde má adresát trvalý/prechodný pobyt. </span>
 																															<span
 																																class="s_A0B393FA"></span>
 																														</p>
@@ -4954,7 +4974,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientPropertyRegistrationNumber']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientPropertyRegistrationNumber']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -4968,28 +4988,29 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; }
-							.s_489786FB
-																															{
-							font-family: 'Times New Roman';font-size: 16px; }
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; }
+																															.s_489786FB
+		{
+																															font-family:
+		'Times New Roman';font-size: 16px; }
 																															.s_D3FCB7B8
-							{ font-family: 'Verdana';font-size: 16px; } </style>
+		{ font-family: 'Verdana';font-size: 16px; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_A0B393FA">Môžete
-							uviesť</span>
+		uviesť</span>
 																															<span
 																																class="s_489786FB"> </span>
 																															<span
 																																class="s_A0B393FA">unikátne
-							číslo pridelené budove v rámci katastrálneho územia. </span>
+		číslo pridelené budove v rámci katastrálneho územia. </span>
 																															<span
 																																class="s_D3FCB7B8"></span>
 																														</p>
@@ -5035,7 +5056,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientBuildingNumber']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientBuildingNumber']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -5049,27 +5070,27 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A4F101E
-							{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																															.s_A8B3B40B
-							{ font-family: 'Arial';font-size: 14.67px; }
+		{ font-family: 'Arial';font-size: 14.67px; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_A4F101E">
-							Uveďte</span>
+		Uveďte</span>
 																															<span
 																																class="s_A8B3B40B"> </span>
 																															<span
 																																class="s_A4F101E">unikátne
-							číslo pridelené budove v rámci ulice. </span>
+		číslo pridelené budove v rámci ulice. </span>
 																															<span
 																																class="s_A0B393FA"></span>
 																														</p>
@@ -5126,7 +5147,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											<xsl:text
 																												disable-output-escaping="yes">PSČ </xsl:text>
 																											<em>
-							*</em>
+		*</em>
 																										</label>
 																										<span
 																											class="fieldContent">
@@ -5144,7 +5165,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientPostalCode']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientPostalCode']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -5158,20 +5179,20 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A4F101E
-							{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_A4F101E">Uveďte
-							poštové smerovacie číslo obce/mesta bez medzier. </span>
+		poštové smerovacie číslo obce/mesta bez medzier. </span>
 																															<span
 																																class="s_A0B393FA"></span>
 																														</p>
@@ -5201,7 +5222,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											<xsl:text
 																												disable-output-escaping="yes">Mesto </xsl:text>
 																											<em>
-							*</em>
+		*</em>
 																										</label>
 																										<span
 																											class="fieldContent">
@@ -5219,7 +5240,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientMunicipalityNonCodelistData']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientMunicipalityNonCodelistData']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -5233,20 +5254,20 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A4F101E
-							{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_A4F101E">Uveďte
-							názov obce/mesta. </span>
+		názov obce/mesta. </span>
 																															<span
 																																class="s_A0B393FA"></span>
 																														</p>
@@ -5267,7 +5288,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientMunicipalityCodelistCode"
 																											style="display: none">
-							RecipientMunicipalityCodelistCode </label>
+		RecipientMunicipalityCodelistCode </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -5285,7 +5306,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientMunicipalityCodelistCode']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientMunicipalityCodelistCode']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -5305,7 +5326,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientMunicipalityItemCode"
 																											style="display: none">
-							RecipientMunicipalityItemCode </label>
+		RecipientMunicipalityItemCode </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -5323,7 +5344,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientMunicipalityItemCode']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientMunicipalityItemCode']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -5343,7 +5364,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientMunicipalityItemName"
 																											style="display: none">
-							RecipientMunicipalityItemName </label>
+		RecipientMunicipalityItemName </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -5361,7 +5382,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientMunicipalityItemName']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientMunicipalityItemName']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -5390,7 +5411,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											<xsl:text
 																												disable-output-escaping="yes">Štát </xsl:text>
 																											<em>
-							*</em>
+		*</em>
 																										</label>
 																										<div
 																											class="fieldContent">
@@ -5406,7 +5427,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientPostalCountryItemName']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientPostalCountryItemName']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -5417,18 +5438,18 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												style="display: none;">
 																												<span
 																													class="lookupComponentId">
-							RecipientPostalCountryItemName</span>
+		RecipientPostalCountryItemName</span>
 																												<span
 																													class="fieldId">
-							RecipientPostalCountryItemCode</span>
+		RecipientPostalCountryItemCode</span>
 																												<span
 																													class="remoteSourceIdentifier"></span>
 																												<span
 																													class="remoteLookupCode">
-							SUSR_0086</span>
+		SUSR_0086</span>
 																												<span
 																													class="fieldId">
-							ServiceID</span>
+		ServiceID</span>
 																											</span>
 																											<div
 																												class="info">
@@ -5438,23 +5459,24 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A4F101E
-							{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_A4F101E">Zvoľte
-							„Vybrať“, vpíšte presný názov štátu (príklad: Slovenská republika),
-							kliknite na „Hľadať“,
+		„Vybrať“, vpíšte presný názov štátu (príklad: Slovenská republika),
+																																kliknite
+		na „Hľadať“,
 																																vyberte
-							hodnotu z číselníka a prejdite na „OK“. </span>
+		hodnotu z číselníka a prejdite na „OK“. </span>
 																															<span
 																																class="s_A0B393FA"></span>
 																														</p>
@@ -5473,28 +5495,28 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													style="display: none;">
 																													<span
 																														class="lookupComponentId">
-							RecipientPostalCountryItemName</span>
+		RecipientPostalCountryItemName</span>
 																													<span
 																														class="fieldId">
-							RecipientPostalCountryItemCode</span>
+		RecipientPostalCountryItemCode</span>
 																													<span
 																														class="remoteSourceIdentifier"></span>
 																													<span
 																														class="remoteLookupCode">
-							SUSR_0086</span>
+		SUSR_0086</span>
 																													<span
 																														class="fieldId">
-							ServiceID</span>
+		ServiceID</span>
 																												</span>
 																												<div
 																													class="tableFilter">
-							Zadajte text: <input class="tableFilterText ui-corner-all" type="text" />
+		Zadajte text: <input class="tableFilterText ui-corner-all" type="text" />
 <input
 																														class="FilterButton ui-button ui-widget ui-state-default ui-corner-all"
 																														type="button"
 																														value="Hľadať"
 																														alt="Hľadať" />
-							Ignorovať diakritiku a veľké písmená <input
+		Ignorovať diakritiku a veľké písmená <input
 																														class="tableFilterIgnoreCaseSensitive"
 																														type="checkbox"
 																														title="Ignorovať diakritiku a veľké písmená" />
@@ -5507,9 +5529,9 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<thead>
 																														<tr>
 																															<th>
-							Kód</th>
+		Kód</th>
 																															<th>
-							Hodnota</th>
+		Hodnota</th>
 																														</tr>
 																													</thead>
 																													<tbody>
@@ -5535,7 +5557,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientPostalCountryItemCode"
 																											style="display: none">Štát
-							ItemCode </label>
+		ItemCode </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -5553,7 +5575,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientPostalCountryItemCode']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientPostalCountryItemCode']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -5573,7 +5595,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientPostalCountryCodelistCode"
 																											style="display: none">
-							RecipientPostalCountryCodelistCode </label>
+		RecipientPostalCountryCodelistCode </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -5591,7 +5613,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientPostalCountryCodelistCode']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientPostalCountryCodelistCode']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -5673,7 +5695,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											<xsl:text
 																												disable-output-escaping="yes">Názov </xsl:text>
 																											<em>
-							*</em>
+		*</em>
 																										</label>
 																										<span
 																											class="fieldContent">
@@ -5689,7 +5711,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientCorporateBodyFullName']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:choose>
 																													<xsl:when
 																														test="./*[name() = 'RecipientCorporateBodyFullName']"><xsl:value-of
@@ -5705,23 +5727,24 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A4F101E
-							{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_A4F101E">Uveďte
-							úplný a presný názov právnickej osoby tak, ako je uvedený v Obchodnom
-							registri SR, prípadne
+		úplný a presný názov právnickej osoby tak, ako je uvedený v Obchodnom
+																																registri
+		SR, prípadne
 																																v inej
-							evidencii, ak sa právnická osoba nezapisuje do Obchodného registra SR. </span>
+		evidencii, ak sa právnická osoba nezapisuje do Obchodného registra SR. </span>
 																															<span
 																																class="s_A0B393FA"></span>
 																														</p>
@@ -5758,7 +5781,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientOrganizationUnit']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:choose>
 																													<xsl:when
 																														test="./*[name() = 'RecipientOrganizationUnit']"><xsl:value-of
@@ -5774,22 +5797,24 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_C1A2E899
-							{ font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
-							.s_D3FCB7B8
-																															{
-							font-family: 'Verdana';font-size: 16px; } </style>
+		{ font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
+																															.s_D3FCB7B8
+		{
+																															font-family:
+		'Verdana';font-size: 16px; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_C1A2E899">V prípade,
-							že rozhodnutie vydáva konkrétna organizačná zložka, môžete uviesť jej
-							úplný a presný názov. </span>
+		že rozhodnutie vydáva konkrétna organizačná zložka, môžete uviesť jej
+																																úplný
+		a presný názov. </span>
 																															<span
 																																class="s_D3FCB7B8"></span>
 																														</p>
@@ -5846,7 +5871,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											<xsl:text
 																												disable-output-escaping="yes">Ulica </xsl:text>
 																											<em>
-							*</em>
+		*</em>
 																										</label>
 																										<span
 																											class="fieldContent">
@@ -5864,7 +5889,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientStreetNamePO']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientStreetNamePO']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -5878,21 +5903,22 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_C1A2E899
-							{ font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
-							.s_D3FCB7B8
-																															{
-							font-family: 'Verdana';font-size: 16px; } </style>
+		{ font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
+																															.s_D3FCB7B8
+		{
+																															font-family:
+		'Verdana';font-size: 16px; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_C1A2E899">Uveďte
-							názov ulice, kde má právnická osoba sídlo. </span>
+		názov ulice, kde má právnická osoba sídlo. </span>
 																															<span
 																																class="s_D3FCB7B8"></span>
 																														</p>
@@ -5938,7 +5964,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientPropertyRegistrationNumberPO']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientPropertyRegistrationNumberPO']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -5952,21 +5978,22 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_C1A2E899
-							{ font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
-							.s_D3FCB7B8
-																															{
-							font-family: 'Verdana';font-size: 16px; } </style>
+		{ font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
+																															.s_D3FCB7B8
+		{
+																															font-family:
+		'Verdana';font-size: 16px; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_C1A2E899">Môžete
-							uviesť unikátne číslo pridelené budove v rámci katastrálneho územia. </span>
+		uviesť unikátne číslo pridelené budove v rámci katastrálneho územia. </span>
 																															<span
 																																class="s_D3FCB7B8"></span>
 																														</p>
@@ -6012,7 +6039,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientBuildingNumberPO']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientBuildingNumberPO']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -6026,27 +6053,27 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A4F101E
-							{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																															.s_A8B3B40B
-							{ font-family: 'Arial';font-size: 14.67px; }
+		{ font-family: 'Arial';font-size: 14.67px; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_A4F101E">
-							Uveďte</span>
+		Uveďte</span>
 																															<span
 																																class="s_A8B3B40B"> </span>
 																															<span
 																																class="s_A4F101E">unikátne
-							číslo pridelené budove v rámci ulice. </span>
+		číslo pridelené budove v rámci ulice. </span>
 																															<span
 																																class="s_A0B393FA"></span>
 																														</p>
@@ -6103,7 +6130,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											<xsl:text
 																												disable-output-escaping="yes">PSČ </xsl:text>
 																											<em>
-							*</em>
+		*</em>
 																										</label>
 																										<span
 																											class="fieldContent">
@@ -6121,7 +6148,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientPostalCodePO']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientPostalCodePO']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -6135,20 +6162,20 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_A4F101E
-							{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
+		{ font-family: 'Arial';font-size: 14.67px;color: #00B050; }
 																															.s_A0B393FA
-							{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
+		{ font-family: 'Times New Roman';font-size: 16px;color: #00B050; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_A4F101E">Uveďte
-							poštové smerovacie číslo obce/mesta bez medzier. </span>
+		poštové smerovacie číslo obce/mesta bez medzier. </span>
 																															<span
 																																class="s_A0B393FA"></span>
 																														</p>
@@ -6178,7 +6205,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											<xsl:text
 																												disable-output-escaping="yes">Mesto </xsl:text>
 																											<em>
-							*</em>
+		*</em>
 																										</label>
 																										<span
 																											class="fieldContent">
@@ -6196,7 +6223,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientMunicipalityNonCodelistDataPO']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientMunicipalityNonCodelistDataPO']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -6210,21 +6237,22 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_C1A2E899
-							{ font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
-							.s_D3FCB7B8
-																															{
-							font-family: 'Verdana';font-size: 16px; } </style>
+		{ font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
+																															.s_D3FCB7B8
+		{
+																															font-family:
+		'Verdana';font-size: 16px; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_C1A2E899">Uveďte
-							názov obce/mesta. </span>
+		názov obce/mesta. </span>
 																															<span
 																																class="s_D3FCB7B8"></span>
 																														</p>
@@ -6245,7 +6273,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientMunicipalityCodelistCodePO"
 																											style="display: none">
-							RecipientMunicipalityCodelistCode </label>
+		RecipientMunicipalityCodelistCode </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -6263,7 +6291,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientMunicipalityCodelistCodePO']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientMunicipalityCodelistCodePO']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -6283,7 +6311,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientMunicipalityItemCodePO"
 																											style="display: none">
-							RecipientMunicipalityItemCode </label>
+		RecipientMunicipalityItemCode </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -6301,7 +6329,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientMunicipalityItemCodePO']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientMunicipalityItemCodePO']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -6321,7 +6349,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientMunicipalityItemNamePO"
 																											style="display: none">
-							RecipientMunicipalityItemName </label>
+		RecipientMunicipalityItemName </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -6339,7 +6367,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientMunicipalityItemNamePO']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientMunicipalityItemNamePO']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -6368,7 +6396,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											<xsl:text
 																												disable-output-escaping="yes">Štát </xsl:text>
 																											<em>
-							*</em>
+		*</em>
 																										</label>
 																										<div
 																											class="fieldContent">
@@ -6384,7 +6412,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientPostalCountryItemNamePO']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientPostalCountryItemNamePO']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -6395,18 +6423,18 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												style="display: none;">
 																												<span
 																													class="lookupComponentId">
-							RecipientPostalCountryItemNamePO</span>
+		RecipientPostalCountryItemNamePO</span>
 																												<span
 																													class="fieldId">
-							RecipientPostalCountryItemCodePO</span>
+		RecipientPostalCountryItemCodePO</span>
 																												<span
 																													class="remoteSourceIdentifier"></span>
 																												<span
 																													class="remoteLookupCode">
-							SUSR_0086</span>
+		SUSR_0086</span>
 																												<span
 																													class="fieldId">
-							ServiceID</span>
+		ServiceID</span>
 																											</span>
 																											<div
 																												class="info">
@@ -6416,24 +6444,26 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<p>
 																														<style
 																															type="text/css">
-							p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		p { margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															body
-							{ font-family: 'Verdana';font-size: 16px; }
+		{ font-family: 'Verdana';font-size: 16px; }
 																															.p_6AAD5060
-							{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
+		{ margin-top: 0px;margin-bottom: 12px;line-height: 1.15; }
 																															.s_C1A2E899
-							{ font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
-							.s_D3FCB7B8
-																															{
-							font-family: 'Verdana';font-size: 16px; } </style>
+		{ font-family: 'Arial';font-size: 14.6666666666667px;color: #00B050; }
+																															.s_D3FCB7B8
+		{
+																															font-family:
+		'Verdana';font-size: 16px; } </style>
 																														<p
 																															class="p_6AAD5060">
 																															<span
 																																class="s_C1A2E899">Zvoľte
-							„Vybrať“, vpíšte presný názov štátu (príklad: Slovenská republika),
-							kliknite na „Hľadať“,
+		„Vybrať“, vpíšte presný názov štátu (príklad: Slovenská republika),
+																																kliknite
+		na „Hľadať“,
 																																vyberte
-							hodnotu z číselníka a prejdite na „OK“. </span>
+		hodnotu z číselníka a prejdite na „OK“. </span>
 																															<span
 																																class="s_D3FCB7B8"></span>
 																														</p>
@@ -6452,28 +6482,28 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													style="display: none;">
 																													<span
 																														class="lookupComponentId">
-							RecipientPostalCountryItemNamePO</span>
+		RecipientPostalCountryItemNamePO</span>
 																													<span
 																														class="fieldId">
-							RecipientPostalCountryItemCodePO</span>
+		RecipientPostalCountryItemCodePO</span>
 																													<span
 																														class="remoteSourceIdentifier"></span>
 																													<span
 																														class="remoteLookupCode">
-							SUSR_0086</span>
+		SUSR_0086</span>
 																													<span
 																														class="fieldId">
-							ServiceID</span>
+		ServiceID</span>
 																												</span>
 																												<div
 																													class="tableFilter">
-							Zadajte text: <input class="tableFilterText ui-corner-all" type="text" />
+		Zadajte text: <input class="tableFilterText ui-corner-all" type="text" />
 <input
 																														class="FilterButton ui-button ui-widget ui-state-default ui-corner-all"
 																														type="button"
 																														value="Hľadať"
 																														alt="Hľadať" />
-							Ignorovať diakritiku a veľké písmená <input
+		Ignorovať diakritiku a veľké písmená <input
 																														class="tableFilterIgnoreCaseSensitive"
 																														type="checkbox"
 																														title="Ignorovať diakritiku a veľké písmená" />
@@ -6486,9 +6516,9 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																													<thead>
 																														<tr>
 																															<th>
-							Kód</th>
+		Kód</th>
 																															<th>
-							Hodnota</th>
+		Hodnota</th>
 																														</tr>
 																													</thead>
 																													<tbody>
@@ -6514,7 +6544,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientPostalCountryItemCodePO"
 																											style="display: none">Štát
-							ItemCode PO </label>
+		ItemCode PO </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -6532,7 +6562,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientPostalCountryItemCodePO']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientPostalCountryItemCodePO']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -6552,7 +6582,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																											title=""
 																											for="RecipientPostalCountryCodelistCodePO"
 																											style="display: none">
-							RecipientPostalCountryCodelistCode </label>
+		RecipientPostalCountryCodelistCode </label>
 																										<span
 																											class="fieldContent"
 																											style="display: none">
@@ -6570,7 +6600,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 																												<xsl:if
 																													test="boolean(./*[name() = 'RecipientPostalCountryCodelistCodePO']/@isReadOnly = 'true')"><xsl:attribute
 																														name="readonly">
-							readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
+		readonly</xsl:attribute><xsl:attribute name="disabled">disabled</xsl:attribute></xsl:if>
 																												<xsl:if
 																													test="./*[name() = 'RecipientPostalCountryCodelistCodePO']"><xsl:attribute
 																														name="value"><xsl:value-of
@@ -6618,7 +6648,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 											<xsl:if test="normalize-space(./egonp:Recipient) = ''">
 												<xsl:if test="./egonp:Recipient/@notInFormData">
 													<script type="text/javascript">$(document).ready(function
-							() { initRepetitionSection(1, 9999, 'layoutRow5025') })</script>
+		() { initRepetitionSection(1, 9999, 'layoutRow5025') })</script>
 												</xsl:if>
 											</xsl:if>
 
@@ -6694,22 +6724,22 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 														<p>
 															<style type="text/css">
 																p { margin-top: 0px;margin-bottom:
-							12px;line-height: 1.15; }
+		12px;line-height: 1.15; }
 																body { font-family:
-							'Verdana';font-size: 16px; }
+		'Verdana';font-size: 16px; }
 																.p_6AAD5060 { margin-top:
-							0px;margin-bottom: 12px;line-height: 1.15; }
+		0px;margin-bottom: 12px;line-height: 1.15; }
 																.s_A4F101E { font-family:
-							'Arial';font-size: 14.67px;color: #00B050; }
+		'Arial';font-size: 14.67px;color: #00B050; }
 																.s_A0B393FA { font-family: 'Times
 																New Roman';font-size: 16px;color:
-							#00B050; } </style>
+		#00B050; } </style>
 															<p class="p_6AAD5060">
 																<span class="s_A4F101E">Ak chcete
-							adresáta informovať o doručení rozhodnutia ďalším osobám na vedomie,
-							môžete zadať ich úplné
+		adresáta informovať o doručení rozhodnutia ďalším osobám na vedomie,
+																	môžete zadať ich úplné
 																	a presné mená a priezviská/názvy
-							a adresy. </span>
+		a adresy. </span>
 																<span class="s_A0B393FA"></span>
 															</p>
 														</p>
@@ -6732,7 +6762,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 						<xsl:if test="normalize-space(/egonp:Dokument/egonp:SecForInformation) = ''">
 							<xsl:if test="/egonp:Dokument/egonp:SecForInformation/@notInFormData">
 								<script type="text/javascript">$(document).ready(function () {
-							initRepetitionSection(0, 1, 'layoutRow5040') })</script>
+		initRepetitionSection(0, 1, 'layoutRow5040') })</script>
 							</xsl:if>
 						</xsl:if>
 						<xsl:for-each select="/egonp:Dokument/egonp:SecEmptySection11">
@@ -6798,7 +6828,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 
 											<label class="fieldLabel" title=""
 												for="ReferenceIdentifier" style="display: none">
-							ReferenceIdentifier </label>
+		ReferenceIdentifier </label>
 											<span class="fieldContent" style="display: none">
 												<input id="ReferenceIdentifier"
 													name="ReferenceIdentifier" title="" type="text"
@@ -6844,7 +6874,7 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 							<input type="hidden" name="Basic" />
 							<div class="caption ui-widget-header">
 								<div class="headercorrection" title="Uložené formuláre">Uložené
-									formuláre</div>
+		formuláre</div>
 								<span class="arrow ui-icon ui-icon-carat-1-n"></span>
 							</div>
 							<div id="layoutRowSavedForms" class="columns">
@@ -6857,10 +6887,10 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 						</div>
 					</div>
 					<div id="mtd_formMetaData" style="display:none">
-						<span id="mtd_version">1.2</span>
+						<span id="mtd_version">1.3</span>
 						<span id="mtd_idp">18706</span>
 						<span id="mtd_namespace">
-							http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.2</span>
+		http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.3</span>
 					</div>
 				</form>
 			</body>
