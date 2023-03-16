@@ -2,7 +2,7 @@
 <xsl:stylesheet xml:lang="en" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:d="http://docbook.org/ns/docbook"
   xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:exsl="http://exslt.org/common"
-  xmlns:egonp="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.3"
+  xmlns:egonp="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.4"
   exclude-result-prefixes="d" version="1.0">
   <xsl:template match="/">
     <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">

@@ -3,7 +3,7 @@
 	<!ENTITY nbsp "&#xa0;">
 ]>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:egonp="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.3"
+	xmlns:egonp="http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.4"
 	exclude-result-prefixes="egonp">
 	<xsl:output method="html" doctype-system="http://www.w3.org/TR/html4/strict.dtd"
 		doctype-public="-//W3C//DTD HTML 4.01//EN" indent="no" omit-xml-declaration="yes" />
@@ -6888,10 +6888,10 @@ maxValue: "Maximálna hodnota položky 'Popis konania / Účastníci konania' mu
 						</div>
 					</div>
 					<div id="mtd_formMetaData" style="display:none">
-						<span id="mtd_version">1.3</span>
+						<span id="mtd_version">1.4</span>
 						<span id="mtd_idp">18706</span>
 						<span id="mtd_namespace">
-		http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.3</span>
+		http://schemas.gov.sk/form/00603481.OpakovaneListinneDorucenie.sk/1.4</span>
 					</div>
 				</form>
 			</body>
